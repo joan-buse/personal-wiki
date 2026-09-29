@@ -1,0 +1,16 @@
+# Harness scratch output (catalog, notes.json and passages stay tracked as evidence)
+data/pending/
+__pycache__/
+*.pyc
+.DS_Store
+# Obsidian workspace state (per-machine)
+vault/.obsidian/workspace*.json
+# Never commit model weights
+*.gguf
+*.safetensors
+
+# Staging copies of the PDFs (identical copies live in vault/raw/)
+three-pdfs/
+
+# Course handout, not a source
+Assignment.pdf

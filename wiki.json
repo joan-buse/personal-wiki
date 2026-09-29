@@ -1,0 +1,6 @@
+{
+  "model": "gemma4:e2b-it-qat",
+  "num_ctx": 4096,
+  "top_k": 5,
+  "folders": ["Resume", "LinkedIn", "Networking", "Job Search"]
+}

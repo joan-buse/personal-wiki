@@ -1,0 +1,51 @@
+{
+  "src-aug-2025-linkedin-training": {
+    "title": "Aug 2025 - Linkedin Training",
+    "raw_path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+    "vault_path": "raw/Aug 2025 - Linkedin Training .pdf",
+    "sha256": "7889a972993d36cc51ca1a044fe45b06fcef1ddb49c9a0804bdfd6847fbb64e0",
+    "notes": [
+      "Interview Preparation Strategies",
+      "LinkedIn Exploration Tools",
+      "LinkedIn Job Hunt Tactics",
+      "LinkedIn Networking Techniques",
+      "LinkedIn Positioning Strategy",
+      "Salary Negotiation Data Points",
+      "Successful Job Hunt Components"
+    ],
+    "ingested": "2026-09-28T18:35:08",
+    "model": "gemma4:e2b-it-qat"
+  },
+  "src-aug-2025-resume-networking-training": {
+    "title": "Aug 2025 - Resume & Networking Training",
+    "raw_path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+    "vault_path": "raw/Aug 2025 - Resume & Networking Training.pdf",
+    "sha256": "e845031a742e33dcbb80f805bd811adf6744fdb7a8cd6bbae6b00352db2bfc8c",
+    "notes": [
+      "Developing Company Focus List",
+      "Networking Follow Up Strategy",
+      "Networking Outreach Principles",
+      "Networking for Success Process",
+      "Process to Advance Career",
+      "Resume Format Guidelines",
+      "Resume Reading Techniques",
+      "Writing Effective Resume Bullets"
+    ],
+    "ingested": "2026-09-28T18:36:05",
+    "model": "gemma4:e2b-it-qat"
+  },
+  "src-aug-2025-resume-only-workshop": {
+    "title": "Aug 2025 - Resume Only Workshop",
+    "raw_path": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+    "vault_path": "raw/Aug 2025 - Resume Only Workshop.pdf",
+    "sha256": "5df29d72297ace4b54818e600423739cbde232e407cbc67270049411aff4ed0b",
+    "notes": [
+      "Resume Application Tips",
+      "Resume Content Optimization",
+      "Resume Format Guidelines",
+      "Writing Effective Resume Bullets"
+    ],
+    "ingested": "2026-09-28T18:36:28",
+    "model": "gemma4:e2b-it-qat"
+  }
+}

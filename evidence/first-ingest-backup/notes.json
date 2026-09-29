@@ -1,0 +1,438 @@
+{
+  "successful job hunt components": {
+    "title": "Successful Job Hunt Components",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "A successful job hunt involves five key elements: exploration, research, positioning, networking, and the job hunt itself.",
+        "details": [
+          "Exploration involves navigating the alumni tool for school name searches and filtering by desired function and company.",
+          "Positioning focuses on optimizing LinkedIn profile elements like Headline, Summary, and Experience.",
+          "Job Hunt involves creating alerts, toggling the 'Open to opportunities' button, and using search filters.",
+          "Networking involves connecting with second-degree connections and alumni.",
+          "Recruiters prefer referrals because referred candidates are hired faster and stay longer."
+        ],
+        "related": [
+          {
+            "title": "Exploration",
+            "reason": "This is one of the five core components of a successful job hunt."
+          },
+          {
+            "title": "Positioning",
+            "reason": "This is one of the five core components of a successful job hunt."
+          },
+          {
+            "title": "Networking",
+            "reason": "This is one of the five core components of a successful job hunt."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "026735cfdfd171a60040339182dc54efb5c7f9a4a2157686831c6ab945b55c88"
+  },
+  "linkedin profile positioning": {
+    "title": "LinkedIn Profile Positioning",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "Positioning on LinkedIn involves strategically placing keywords in key sections and optimizing profile visuals to appeal to recruiters.",
+        "details": [
+          "Recruiters search by job title, key words, connection closeness, and photo.",
+          "Most important placement order is Headline, Summary/About, and Experience.",
+          "The algorithm values words in the Headline, Summary/About, and Experience due to character limits.",
+          "The About section should include one line about what you are and one line about what you want.",
+          "Photo attire should match the desired corporate culture (e.g., casual for startups, formal for finance).",
+          "Use Jobscan to identify missing keywords by comparing your profile to dream job postings."
+        ],
+        "related": [
+          {
+            "title": "Positioning",
+            "reason": "This is one of the five core components of a successful job hunt."
+          },
+          {
+            "title": "Exploration",
+            "reason": "Identifying keywords needed involves looking at dream job postings."
+          },
+          {
+            "title": "Job Hunt",
+            "reason": "Using the profile to apply for jobs is part of the job hunt process."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "376c26644d20dd49fdc85e8114e344f39f8194d82c84891210e2a5387b7c5cf0"
+  },
+  "linkedin networking strategies": {
+    "title": "LinkedIn Networking Strategies",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "Effective networking on LinkedIn includes using personalized outreach messages for referrals and leveraging alumni connections.",
+        "details": [
+          "Cold outreach messages should follow a structure: Prove commonality, state what you are looking for, and take friction out of the process.",
+          "Second-degree connections can be leveraged by searching for mutual connections and sending messages to them.",
+          "Alumni outreach messages should mention shared college and ask for advice or a brief chat.",
+          "Example outreach message structure involves asking for a 10-minute chat to learn expertise."
+        ],
+        "related": [
+          {
+            "title": "Networking",
+            "reason": "This is one of the five core components of a successful job hunt."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "27e5aa0425629c10a05e5058d2f28bfb097a238a5a62e21d8f80fbf7338b08bf"
+  },
+  "interview preparation strategies": {
+    "title": "Interview Preparation Strategies",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "This section outlines methods for researching companies and preparing for interviews using LinkedIn features.",
+        "details": [
+          "Read company pages and use their language in interviews and resumes",
+          "Search key words in LinkedIn Posts to find popular posts and big names",
+          "Follow LinkedIn influencers to learn industry language",
+          "Use the Job icon to see common interview practice questions"
+        ],
+        "related": [
+          {
+            "title": "Researching Company Experience",
+            "reason": "This is a core research activity mentioned for interviews."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "4afd17ed82b002d94244ce17634774af190240e13b32cce1f4491b191185fa5d"
+  },
+  "gathering feedback from former employees": {
+    "title": "Gathering Feedback From Former Employees",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "The source suggests using LinkedIn to find former employees for valuable, unfiltered feedback.",
+        "details": [
+          "Use All People > Advanced search > Past company [Name of company] to find former employees",
+          "Example message to ask for a chat",
+          "Essential questions to ask former employees are why they left and if they would work there again"
+        ],
+        "related": [
+          {
+            "title": "Researching Company Experience",
+            "reason": "Finding former employees is a method for gathering company experience insights."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "f6446c792a4bf9c7c750f1c35ead10f790ac9dbd6086d90b6e0faa37cf3a3a2c"
+  },
+  "salary negotiation data points": {
+    "title": "Salary Negotiation Data Points",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "The most useful data point for salary negotiations is understanding what the competition is paying.",
+        "details": [
+          "The most useful data point in salary negotiations is how much the competition is paying"
+        ],
+        "related": [],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "ac2b752b5a581145d4ac9c148d420b13d0fdf20b431299cf8955fcd27cb7b9f4"
+  },
+  "reading job descriptions for edits": {
+    "title": "Reading Job Descriptions for Edits",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "This session advises looking for repeated words in a job description and incorporating them into resume bullets to match the role's language.",
+        "details": [
+          "Highlight 'Creativity' as thinking outside the box",
+          "Highlight 'Monetization' by detailing what was monetized",
+          "Highlight 'Cross-functional leadership' by mentioning working with multiple teams"
+        ],
+        "related": [
+          {
+            "title": "Resume Bullets",
+            "reason": "This session details the required elements for effective resume bullets."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "36ae93fbd89f56ef0e316d5683ab7467da3884f88af6783ae06496f2c6d84a92"
+  },
+  "resume format readability goals": {
+    "title": "Resume Format Readability Goals",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "The primary goal of resume formatting is readability, as recruiters spend only 7-8 seconds reviewing a resume.",
+        "details": [
+          "Chronological format is for classic industries like banking",
+          "Hybrid format uses job titles followed by skill-based bullets",
+          "Functional format is best for big pivots or unfamiliar industries"
+        ],
+        "related": [
+          {
+            "title": "ATS",
+            "reason": "ATS systems index resumes, and Haas' standard format is designed to make this easier."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "5bb4e821feaad1dc8f0545a7d0ed1d81aa07dee79fb7ad0c77a1abef0c321ae6"
+  },
+  "developing a successful job search": {
+    "title": "Developing A Successful Job Search",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "A successful job search involves six steps, starting with clarity on your direction and ending with high-stakes testing and refinement.",
+        "details": [
+          "Steps include Desk research, Value proposition development, Low-to-medium stakes pressure test, High stakes pressure test, and final Revision and refinement"
+        ],
+        "related": [
+          {
+            "title": "Desk Research",
+            "reason": "Desk research is the first step in the job search process and involves understanding personal interests and domain knowledge."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "688f8ce66d5748a61dc332b1d382880394adec67e6d3357c1a4d4679f044a086"
+  },
+  "resume bullet components": {
+    "title": "Resume Bullet Components",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "Effective resume bullets must include at least three elements: What, How, and Impact.",
+        "details": [
+          "Include What: The work object made",
+          "Include How: The skills used to make the work object",
+          "Include Impact: Measurable outcomes, ideally",
+          "Include Why: Importance or frequency of the work"
+        ],
+        "related": [
+          {
+            "title": "Gen AI Use Cases",
+            "reason": "Gen AI can be used to rewrite bullets, point out changes, and improve readability."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "58cba3788a0d5b4247fffada4bec4852a4783d6ed09ea47f49fde1e05d22c677"
+  },
+  "networking for success process": {
+    "title": "Networking for Success Process",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "This outlines a four-step process for effective networking, starting with generating a hypothesis and ending with planning the first outreach.",
+        "details": [
+          "Generate a hypothesis to explore industry function location etc.",
+          "Generate learning targets 40-50 target companies and look at earnings strategy etc.",
+          "Begin your networking list people from undergrad and grad who work there.",
+          "Plan first outreach."
+        ],
+        "related": [
+          {
+            "title": "Exploratory Conversations",
+            "reason": "Exploratory conversations are a key part of the networking process."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "341b85407298ab3013d34e031ad6d7ef51b4c6a2584d60570cf05c024b29f911"
+  },
+  "benefits of networking": {
+    "title": "Benefits of Networking",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "Networking provides several benefits including refining targets, learning vocabulary, identifying hidden opportunities, and building relationships.",
+        "details": [
+          "Refine target industry and roles.",
+          "Learn the vocabulary.",
+          "Identify hidden opportunities (60% of jobs are not posted).",
+          "Practice and refine your personal pitch.",
+          "The further in your career, the more likely the next job is from your network."
+        ],
+        "related": [
+          {
+            "title": "Referrals",
+            "reason": "Referrals are a specific outcome achieved after building a trusting relationship through networking."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "c17215c55a6ade6d93bc10c272c6844d57e662e77b165624751b8c87ff982eff"
+  },
+  "outreach principles for success": {
+    "title": "Outreach Principles for Success",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "Effective outreach requires specific principles such as keeping messages short, stating the connection upfront, and focusing the conversation on the other person.",
+        "details": [
+          "Keep outreach short less than 100 words.",
+          "Only ask for 15-20 minutes.",
+          "State your connection up front (e.g., Ex-Fintech to Fintech).",
+          "Generalize interest in industry/role.",
+          "It’s about them."
+        ],
+        "related": [
+          {
+            "title": "Referrals",
+            "reason": "Referrals are a specific outcome achieved after building a trusting relationship through networking."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "396364fadd890695a0318a4a9253291410309d2dbc46f24ffeb2dfc8e6bcd193"
+  },
+  "follow up strategy": {
+    "title": "Follow Up Strategy",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "A good follow-up strategy involves sending thank you notes and keeping in touch through milestones or 'post card' strategies.",
+        "details": [
+          "Send a thank you note.",
+          "Keep them in the loop or use the post card strategy.",
+          "Notify them of milestones (e.g., finishing semester, coming back from a trip)."
+        ],
+        "related": [
+          {
+            "title": "Networking For Success Process",
+            "reason": "Follow-up actions are part of the ongoing process of networking."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "1c046be03033f613d5fbfbe9b609f2023157373d0626de3e7da7b788c17127d1"
+  },
+  "resume word repetition strategy": {
+    "title": "Resume Word Repetition Strategy",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-only-workshop": {
+        "summary": "Look for repeated words in a target job description and incorporate them into your resume bullets.",
+        "details": [
+          "Highlight 'Creativity' as thinking outside the box",
+          "Highlight 'Monetization' by stating what you monetized",
+          "Highlight 'Cross-functional leadership' by mentioning working with multiple teams simultaneously",
+          "Highlight customer experience if the posting mentions customers and you have experience with them"
+        ],
+        "related": [
+          {
+            "title": "Resume Bullet Components",
+            "reason": "This topic details the required elements for effective resume bullets."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "0c8fe1be96de912a27a6478ff9587481e78510fb170ff8671cf61a976b45ef82"
+  },
+  "resume formatting readability goals": {
+    "title": "Resume Formatting Readability Goals",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-only-workshop": {
+        "summary": "The primary goal of resume formatting is readability because recruiters spend only 7-8 seconds per resume.",
+        "details": [
+          "Chronological format is for classic industries and single pivots",
+          "Hybrid format places job titles under the company name with skill-based bullets",
+          "Functional format is best for big pivots, unfamiliar industries, transferable skills, or whole careers in one industry"
+        ],
+        "related": [
+          {
+            "title": "Resume Format Readability Goals",
+            "reason": "This is the main topic detailing the goals related to resume formatting."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "dda9ef05ac2f4db52b6a424789e6db1469c4f44a9273c17ddd459c1325ee1935"
+  },
+  "resume bullet structure elements": {
+    "title": "Resume Bullet Structure Elements",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-only-workshop": {
+        "summary": "Resume bullets should include at least three elements: What, How, and Impact.",
+        "details": [
+          "What: The thing or 'work object' you made",
+          "How: The skills used to make the work object (tailored to the employer/role)",
+          "Impact: Measurable outcome ideally",
+          "Why: Why it was important or part of a company's bigger strategy"
+        ],
+        "related": [
+          {
+            "title": "Resume Bullet Components",
+            "reason": "This topic details the required elements for effective resume bullets."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "9f590eb531f781674890bd31aa34a27d450dafdcf870bb50a59c96ec14ccf383"
+  },
+  "resume content removal advice": {
+    "title": "Resume Content Removal Advice",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-only-workshop": {
+        "summary": "Certain elements should be removed from a resume to improve its focus and readability.",
+        "details": [
+          "Remove undergrad GPA as it invites comparison",
+          "Remove undergrad awards unless space allows",
+          "Use abbreviations only if moving within the same industry or function"
+        ],
+        "related": [
+          {
+            "title": "Resume Bullet Structure Elements",
+            "reason": "This topic details the required elements for effective resume bullets."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "a328ac33697e8d2534cd3e578c66c8fdfd2362bebb2e77b2213a0935e8a0bf07"
+  }
+}

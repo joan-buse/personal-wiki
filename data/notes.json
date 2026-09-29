@@ -1,0 +1,632 @@
+{
+  "successful job hunt components": {
+    "title": "Successful Job Hunt Components",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "A successful job hunt involves five key elements: exploration, research, positioning, networking, and the job hunt itself.",
+        "details": [
+          "Exploration involves navigating the alumni tool to search by school name and filter by desired function or company.",
+          "Positioning emphasizes key profile sections: Headline, Summary/About, and Experience, as the algorithm values words in these sections.",
+          "To identify necessary keywords, use Jobscan to compare your profile against ideal job postings.",
+          "Photo choice should match desired corporate culture (e.g., casual for startups, formal for finance).",
+          "Recommendations are preferred over endorsements for visibility."
+        ],
+        "related": [
+          {
+            "title": "Exploration",
+            "reason": "This is one of the five core components of a successful job hunt."
+          },
+          {
+            "title": "Positioning",
+            "reason": "This is one of the five core components of a successful job hunt."
+          },
+          {
+            "title": "Networking",
+            "reason": "Networking is one of the five core components of a successful job hunt."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "0e010aaee2cb9b9ae9a2efe0a2da1d349940098794ddebc82e8ae0dac60a0d72",
+    "links": [
+      {
+        "title": "LinkedIn Exploration Tools",
+        "reason": "Exploration is a key component of the job hunt."
+      },
+      {
+        "title": "LinkedIn Positioning Strategy",
+        "reason": "Positioning is a key component of the job hunt."
+      },
+      {
+        "title": "LinkedIn Job Hunt Tactics",
+        "reason": "The job hunt phase is a key component of the job hunt."
+      }
+    ]
+  },
+  "linkedin exploration tools": {
+    "title": "LinkedIn Exploration Tools",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "LinkedIn offers specific tools for exploring industry and company information, including an alumni tool and cold outreach guidelines.",
+        "details": [
+          "Alumni tool allows searching by school name and filtering by desired function or company.",
+          "Cold outreach message structure suggests proving commonality, stating what you are looking for, and taking friction out of the request.",
+          "Cover photos can be sourced from royalty-free images on Pexels.",
+          "Example profiles can be found by searching '[School name] [Desired job title]'.",
+          "Recommendations are better than endorsements and should focus on quality connections."
+        ],
+        "related": [
+          {
+            "title": "Networking",
+            "reason": "This section details methods for building connections on LinkedIn."
+          },
+          {
+            "title": "LinkedIn Cold Outreach Message Guidelines",
+            "reason": "These guidelines provide specific advice for initiating contact."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "0b93160d24a395a21a3612307b0565997dc4ecfd43db5f8b5eab890589339a18",
+    "links": [
+      {
+        "title": "Successful Job Hunt Components",
+        "reason": "Exploration is a key component of the LinkedIn exploration tools."
+      },
+      {
+        "title": "LinkedIn Positioning Strategy",
+        "reason": "Optimizing profile sections is a direct application of LinkedIn exploration tools."
+      },
+      {
+        "title": "LinkedIn Job Hunt Tactics",
+        "reason": "Creating alerts and search filters are specific tools mentioned in the LinkedIn exploration context."
+      }
+    ]
+  },
+  "linkedin positioning strategy": {
+    "title": "LinkedIn Positioning Strategy",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "Positioning on LinkedIn involves optimizing profile sections, especially the headline and summary, using keywords from dream job postings.",
+        "details": [
+          "The algorithm places high value on words in the Headline, Summary/About, and Experience sections due to character limits.",
+          "The Headline should state your aspiration (e.g., 'Aspiring Product Manager').",
+          "The About section should include a summary of your experience and what you are looking for.",
+          "Use Jobscan to check the percentage of keywords from job descriptions reflected in your profile.",
+          "Photo attire must match the desired corporate culture."
+        ],
+        "related": [
+          {
+            "title": "Resume",
+            "reason": "Positioning directly impacts how your resume is perceived by recruiters."
+          },
+          {
+            "title": "Job Hunt",
+            "reason": "Positioning is a key step in the overall job hunt process."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "cfad60e26f91a541d2cef8f9ca558c0864922963c75dcac5b0f39c2d6c283750",
+    "links": [
+      {
+        "title": "Successful Job Hunt Components",
+        "reason": "Positioning is one of the five key elements of a successful job hunt."
+      },
+      {
+        "title": "LinkedIn Job Hunt Tactics",
+        "reason": "This note details tactics for the job hunt phase on LinkedIn, which is related to positioning."
+      },
+      {
+        "title": "Interview Preparation Strategies",
+        "reason": "This section suggests using LinkedIn features for company research and interview prep."
+      }
+    ]
+  },
+  "linkedin job hunt tactics": {
+    "title": "LinkedIn Job Hunt Tactics",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "The job hunt phase on LinkedIn includes creating alerts, using specific search filters, and managing profile visibility settings.",
+        "details": [
+          "Create job alerts to receive notifications for new roles matching desired criteria.",
+          "Use filters to narrow results by time frame (e.g., past week), experience level, company size, and work type.",
+          "Toggle the 'Open to opportunities' button to be visible to recruiters.",
+          "Automatically share your profile when applying for a job is an option in settings.",
+          "Signal interest to a company by sharing job alerts and signaling interest to recruiters."
+        ],
+        "related": [
+          {
+            "title": "Job Hunt",
+            "reason": "This section covers the active steps taken to find and apply for jobs."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "db97088648025a2668918b8fd36a9a1b4adb90c5ea9bc99967b74000e28b4fec",
+    "links": [
+      {
+        "title": "LinkedIn Positioning Strategy",
+        "reason": "Directly related to managing profile visibility settings mentioned in the NOTE."
+      },
+      {
+        "title": "LinkedIn Exploration Tools",
+        "reason": "Related to creating alerts and using specific search filters mentioned in the NOTE."
+      },
+      {
+        "title": "LinkedIn Networking Techniques",
+        "reason": "Related to managing profile visibility settings and general job hunt tactics."
+      }
+    ]
+  },
+  "interview preparation strategies": {
+    "title": "Interview Preparation Strategies",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "This section outlines methods for researching companies and preparing for interviews using LinkedIn features. It suggests using company language and searching for popular posts and groups to find industry insights.",
+        "details": [
+          "Read through a company’s page using their same language in interviews and resumes.",
+          "Search key words in the search bar, select “Posts” to find popular posts highlighting big names.",
+          "Follow “Linkedin influencers” to understand industry happenings and language.",
+          "Use the Job icon > Interview prep to see common practice questions.",
+          "Use Advanced search to find past employees and ask specific questions about leaving and returning."
+        ],
+        "related": [
+          {
+            "title": "Researching Company Experience",
+            "reason": "This topic covers how to gather information about a company's background and past employees."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "ed85145abcebe3f37d3c989914376e2bcb99e97a7b7ee0efbe5cd2bd9d1bae51",
+    "links": [
+      {
+        "title": "LinkedIn Exploration Tools",
+        "reason": "Directly related as it discusses LinkedIn features for company/industry research."
+      },
+      {
+        "title": "LinkedIn Positioning Strategy",
+        "reason": "Related as it focuses on optimizing profile sections using keywords from job postings."
+      },
+      {
+        "title": "LinkedIn Job Hunt Tactics",
+        "reason": "Related as it details specific job hunt phases on LinkedIn."
+      }
+    ]
+  },
+  "linkedin networking techniques": {
+    "title": "LinkedIn Networking Techniques",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "The source provides specific tactics for engaging with people on LinkedIn, including finding industry voices and connecting with former employees.",
+        "details": [
+          "Use company language when researching and applying.",
+          "Search for popular posts by selecting “Posts” and filtering by keywords.",
+          "Follow influencers to learn industry language and happenings.",
+          "Join groups based on function or role and message people with similar characteristics.",
+          "Contact former employees with specific questions about why they left and if they would work there again."
+        ],
+        "related": [
+          {
+            "title": "Interview Preparation Strategies",
+            "reason": "Networking often overlaps with interview preparation when seeking advice from former employees."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "57853cd323b0085fc0ece55ada94c98ad148fae99eeb0a8e4581bae16445a0a4",
+    "links": [
+      {
+        "title": "LinkedIn Exploration Tools",
+        "reason": "Provides specific tools for exploring industry and company information relevant to LinkedIn networking."
+      }
+    ]
+  },
+  "salary negotiation data points": {
+    "title": "Salary Negotiation Data Points",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-linkedin-training": {
+        "summary": "The most useful data point for salary negotiations is understanding what the competition is paying.",
+        "details": [
+          "The most useful data point in salary negotiations is how much the competition is paying."
+        ],
+        "related": [],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "af67561764a1280666689438131d37f27d2f7f33de2092e9f237597532a53d85",
+    "links": [
+      {
+        "title": "Successful Job Hunt Components",
+        "reason": "This outlines the overall process, which includes the research needed for salary negotiation."
+      },
+      {
+        "title": "Process to Advance Career",
+        "reason": "This six-step process includes desk research, which is relevant to understanding competition."
+      },
+      {
+        "title": "Developing Company Focus List",
+        "reason": "This is a step in the job hunt that informs where to find salary data."
+      }
+    ]
+  },
+  "resume reading techniques": {
+    "title": "Resume Reading Techniques",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "This session advises looking for repeated words in job descriptions and incorporating them into resume bullets to match the role's language.",
+        "details": [
+          "Look for repeated words in a target job description and try to repeat those in your resume bullets",
+          "If the posting says “The successful candidate must commit to XYZ dates,” be ready to commit to these",
+          "Really long phrases (bullets that are extra long or at a greater level of detail than the others) suggest this is a pain point in the company; network to confirm this is the case and emphasize the skills that can “fix” or combat this",
+          "Most job descriptions are templates that hiring managers then tweak for the most important aspects of the role",
+          "If there is a phrase that is a-typical, it means it was intentionally changed"
+        ],
+        "related": [],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "565a80f4aa436c652749af012c12434fdfda5e45e85e8b211e0d925a26886288",
+    "links": [
+      {
+        "title": "Resume Content Optimization",
+        "reason": "Both focus on tailoring resume language to match job descriptions."
+      }
+    ]
+  },
+  "resume format guidelines": {
+    "title": "Resume Format Guidelines",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "The recommended resume formats depend on the intended next move, focusing on readability for recruiters who spend only 7-8 seconds per resume.",
+        "details": [
+          "Chronological format is for classic/traditional industries or single pivots",
+          "Hybrid format places job titles all in a row under the company name with sections of bullets under function or skill",
+          "Functional format is most rated for big pivots, unfamiliar industries, transferable skills, or when the whole career is in one industry",
+          "Remove undergrad GPA because it opens you up to comparison",
+          "Remove undergrad awards unless you have space",
+          "Make sure you have an additional humorous section to entice the reader to ask about it"
+        ],
+        "related": [],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      },
+      "src-aug-2025-resume-only-workshop": {
+        "summary": "Resume formatting should prioritize readability because recruiters spend only 7-8 seconds per resume, acting as a marketing tool.",
+        "details": [
+          "Goal is readability for recruiters who spend 7-8 seconds per resume",
+          "Chronological format is for classic/traditional industries or single pivots",
+          "Hybrid format uses job titles followed by function/skill bullets",
+          "Functional format is recommended for big pivots, unfamiliar industries, or transferable skills"
+        ],
+        "related": [
+          {
+            "title": "Resume Format Guidelines",
+            "reason": "This note summarizes the different resume formats and their recommended use cases."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "88c880e428d4c809f73403672c45464866415fedda9636a251afc7e4de73d27f",
+    "links": [
+      {
+        "title": "Resume Content Optimization",
+        "reason": "Both focus on tailoring resume language to match job descriptions."
+      }
+    ]
+  },
+  "writing effective resume bullets": {
+    "title": "Writing Effective Resume Bullets",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "Resume bullets should include at least three elements: What, How, and Impact, and should be explicit rather than mysterious.",
+        "details": [
+          "Resume bullets should include 3/4 elements at a minimum: What (the thing/work object), How (skills used), and Impact (measurable outcome ideally)",
+          "Start with “impact” if it is large; start with “how” if you are pivoting industry or role",
+          "All bullets should be explicit rather than intentionally mysterious to generate curiosity or a follow-up question",
+          "Adjectives and adverbs make a bullet long",
+          "Use abbreviations only if you are moving within the same industry or function"
+        ],
+        "related": [],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      },
+      "src-aug-2025-resume-only-workshop": {
+        "summary": "Resume bullets should include at least three elements: What, How, and Impact. They should be explicit rather than mysterious to generate curiosity.",
+        "details": [
+          "Resume bullets should include at least three elements: What, How, and Impact",
+          "Start with 'impact' if it is large; start with 'how' if you are pivoting industry or role",
+          "Adjectives and adverbs make a bullet long",
+          "Use abbreviations only if moving within the same industry or function"
+        ],
+        "related": [
+          {
+            "title": "Writing Effective Resume Bullets",
+            "reason": "This source provides specific elements and structure for resume bullets."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "55150703e74a9e915c2dc77dca135817799e4806a3a4bd38161e5723006bf6ed",
+    "links": [
+      {
+        "title": "Resume Content Optimization",
+        "reason": "Both focus on tailoring resume language to match job descriptions."
+      },
+      {
+        "title": "Resume Reading Techniques",
+        "reason": "Both advise looking for repeated words in job descriptions to incorporate into resume content."
+      },
+      {
+        "title": "Resume Format Guidelines",
+        "reason": "Resume format depends on the intended next move, which relates to the overall career process."
+      }
+    ]
+  },
+  "process to advance career": {
+    "title": "Process to Advance Career",
+    "folder": "Job Search",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "A six-step process for a successful job search involves clarity, desk research, value proposition development, testing, and refinement.",
+        "details": [
+          "Six steps of a successful job search: 0) Clarity on your “way” and your interests, 1) Desk research, 2) Value proposition development, 3) Low-to-medium stakes pressure test and feedback, 4) Revise and refine, 5) High stakes pressure test and feedback, 6) Revise and refine",
+          "related_topics_reason_for_connection_1:"
+        ],
+        "related": [],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "52dd827edd0d352b9eb9767463e3c19a0c4951300fcc1f1a3bfdcc08d9b07052",
+    "links": [
+      {
+        "title": "Successful Job Hunt Components",
+        "reason": "This note details the key elements that feed into the six-step process."
+      }
+    ]
+  },
+  "networking for success process": {
+    "title": "Networking for Success Process",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "This outlines a four-step process for networking success, starting with generating a hypothesis and ending with planning the first outreach.",
+        "details": [
+          "Generate a hypothesis to explore industry function location etc.",
+          "Generate learning targets like 40-50 target companies.",
+          "Begin a networking list of people from undergrad and grad who work there.",
+          "Plan the first outreach."
+        ],
+        "related": [
+          {
+            "title": "LinkedIn Networking Techniques",
+            "reason": "The source details specific networking tactics."
+          },
+          {
+            "title": "Interview Preparation Strategies",
+            "reason": "Exploratory conversations are a key part of preparation."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "23478d0b2f789de52d36682e555f7578f0f75ed8fd468931d1cbec65274a34f8",
+    "links": [
+      {
+        "title": "Successful Job Hunt Components",
+        "reason": "Outlines the key elements that networking is part of."
+      }
+    ]
+  },
+  "networking outreach principles": {
+    "title": "Networking Outreach Principles",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "These principles guide effective outreach when networking, focusing on brevity, connection, and focusing on the other person.",
+        "details": [
+          "Keep outreach short under 100 words.",
+          "Only ask for 15-20 minutes.",
+          "State your connection upfront (e.g., Ex-Fintech to Fintech).",
+          "Generalize interest in industry/role.",
+          "Focus on the other person."
+        ],
+        "related": [
+          {
+            "title": "LinkedIn Networking Techniques",
+            "reason": "Outreach is a core tactic in LinkedIn networking."
+          },
+          {
+            "title": "Successful Job Hunt Components: A successful job hunt involves five key elements: exploration, research, positioning, networking, and the job hunt itself.",
+            "reason": "Networking is one of the five key elements of a successful job hunt."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "603c2375e0c27e2972c7e64b119fae444e8085b0d296544af1e8fed05bbf45b6",
+    "links": [
+      {
+        "title": "Networking for Success Process",
+        "reason": "Outlines a process for networking success, which aligns with the principles of effective outreach."
+      },
+      {
+        "title": "Networking Follow Up Strategy",
+        "reason": "Provides tactics for engaging with people, which is a key part of networking outreach."
+      },
+      {
+        "title": "Developing Company Focus List",
+        "reason": "Guides the focus needed for effective networking outreach."
+      }
+    ]
+  },
+  "developing company focus list": {
+    "title": "Developing Company Focus List",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "This section advises on how to develop a focused list of companies and industries for networking purposes.",
+        "details": [
+          "Define specific tech or fintech types.",
+          "Start with dream employers.",
+          "Look at conferences of interest to list attending companies and sponsors.",
+          "CMG has seen success with student cold-calling dream companies."
+        ],
+        "related": [
+          {
+            "title": "LinkedIn Exploration Tools",
+            "reason": "Desk research is required before exploratory conversations."
+          },
+          {
+            "title": "Interview Preparation Strategies",
+            "reason": "Company research informs the development of a company focus list."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "e42ab7a4b10fcd8ed1003dce51637b966af6895dbfe3a8c279bca7f7ca2f6cac",
+    "links": [
+      {
+        "title": "Successful Job Hunt Components",
+        "reason": "This note outlines the key elements of a job hunt, which relates to developing a focused company list."
+      },
+      {
+        "title": "Process to Advance Career",
+        "reason": "This provides a six-step process for a successful job search, which is relevant to developing a focused list."
+      },
+      {
+        "title": "Networking for Success Process",
+        "reason": "This outlines a four-step process for networking success, which is a key part of developing a focused list."
+      }
+    ]
+  },
+  "networking follow up strategy": {
+    "title": "Networking Follow Up Strategy",
+    "folder": "Networking",
+    "contributions": {
+      "src-aug-2025-resume-networking-training": {
+        "summary": "The source recommends specific methods for following up after an initial networking interaction.",
+        "details": [
+          "Send a thank you note.",
+          "Keep in touch using a 'post card' strategy (notifying them of milestones).",
+          "Example milestone notification: finishing a semester or returning from a trip."
+        ],
+        "related": [
+          {
+            "title": "LinkedIn Networking Techniques",
+            "reason": "Keeping in touch is a method of engagement."
+          },
+          {
+            "title": "LinkedIn Job Hunt Tactics",
+            "reason": "Follow-up is a tactic used in the job hunt phase."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "feddd1b36d6dcf4b8f4395846b4c2a37cfaaf19e57c6ec99b822de62ce52da59",
+    "links": [
+      {
+        "title": "Networking for Success Process",
+        "reason": "This outlines a four-step process for networking success, which is a core part of a networking strategy."
+      }
+    ]
+  },
+  "resume content optimization": {
+    "title": "Resume Content Optimization",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-only-workshop": {
+        "summary": "Optimize resume content by looking for repeated words in job descriptions and tailoring your resume language to match the role's vocabulary.",
+        "details": [
+          "Look for repeated words in a target job description and repeat them in resume bullets",
+          "Highlight experience with stakeholders if the posting mentions their customers",
+          "For niche companies, pick attributes appealing to the target audience like revenue or customer size"
+        ],
+        "related": [
+          {
+            "title": "Resume Reading Techniques",
+            "reason": "This relates to how to analyze job descriptions to inform resume content."
+          }
+        ],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "bcdeb3eee1c8d8611f7709bf648d272881ede0d7a8dfaa62b87ef6978b9e76fe",
+    "links": [
+      {
+        "title": "Resume Reading Techniques",
+        "reason": "Both focus on looking for repeated words in job descriptions."
+      }
+    ]
+  },
+  "resume application tips": {
+    "title": "Resume Application Tips",
+    "folder": "Resume",
+    "contributions": {
+      "src-aug-2025-resume-only-workshop": {
+        "summary": "Provide specific advice on what to remove from a resume and how to handle specific application requirements.",
+        "details": [
+          "Remove undergrad GPA unless you have space",
+          "Remove undergrad awards unless you have space",
+          "Put all 'applied innovation' classwork in experience",
+          "Make sure to have an additional humorous section to entice the reader"
+        ],
+        "related": [],
+        "model": "gemma4:e2b-it-qat",
+        "date": "2026-09-28"
+      }
+    },
+    "rendered_sha": "1a08ab58d75a2cb7e84fe6857383aa583d348179f9d37ba944a116fb8525b44e",
+    "links": [
+      {
+        "title": "Resume Reading Techniques",
+        "reason": "Provides advice on matching resume language to job descriptions."
+      },
+      {
+        "title": "Resume Content Optimization",
+        "reason": "Focuses on tailoring resume language to match role vocabulary."
+      },
+      {
+        "title": "Resume Format Guidelines",
+        "reason": "Offers advice on resume format based on the intended next move."
+      }
+    ]
+  }
+}

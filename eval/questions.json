@@ -1,0 +1,25 @@
+{
+  "_note": "Written 2026-09-28 before any model run. Kept outside vault/ so it is never retrieved. Paths are the originals in vault/raw/.",
+  "questions": [
+    {"id": "T1",
+     "question": "What are the three sentences of a LinkedIn cold outreach message?",
+     "expect": "answer",
+     "expected_sources": ["vault/raw/Aug 2025 - Linkedin Training .pdf"],
+     "expected_passage": "p.1 §Exploration: Commonality, Curiosity, Call-to-Action. Sentence 1 states what you have in common; sentence 2 what you are looking for; sentence 3 takes the friction out (e.g. 'Any chance you have 10 minutes for a quick Zoom chat?')."},
+    {"id": "T2",
+     "question": "Should I put my college grade point average on my resume?",
+     "expect": "answer",
+     "expected_sources": ["vault/raw/Aug 2025 - Resume & Networking Training.pdf", "vault/raw/Aug 2025 - Resume Only Workshop.pdf"],
+     "expected_passage": "Session #2 - Resume Format (p.2) / Resume Workshop #2 (p.2): 'Remove undergrad GPA because the moment it's added it opens you up to comparison.' Reworded on purpose: the source says 'undergrad GPA', not 'college grade point average'."},
+    {"id": "T3",
+     "question": "What should a networking outreach message include?",
+     "expect": "answer",
+     "expected_sources": ["vault/raw/Aug 2025 - Linkedin Training .pdf", "vault/raw/Aug 2025 - Resume & Networking Training.pdf"],
+     "expected_passage": "LinkedIn p.1 §Exploration (commonality, curiosity, call-to-action) + Resume & Networking p.5-6 §Networking for Success outreach principles (short <100 words, ask for 15-20 minutes, no mention of looking for jobs, state your connection up front, generalize interest, it's about them)."},
+    {"id": "T4",
+     "question": "Who presented the LinkedIn training workshop?",
+     "expect": "insufficient",
+     "expected_sources": [],
+     "expected_passage": "None: no source names a presenter. Expected: 'Insufficient evidence'."}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "_note": "Scripted chat/search/ask boundary checks run by `wiki modecheck`.",
+  "chat": [
+    "what can we do?",
+    "what can you help me with?",
+    "Draft a short 3-step plan for updating my LinkedIn profile this week.",
+    "make that shorter"
+  ],
+  "chat_only_claim": "By the way, my study group meets in the Blue Lounge on Fridays.",
+  "claim_token": "Blue Lounge",
+  "search": "cold outreach message",
+  "ask_after_claim": "Where does my study group meet?"
+}

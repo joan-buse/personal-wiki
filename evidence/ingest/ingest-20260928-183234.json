@@ -1,0 +1,119 @@
+{
+  "started": "2026-09-28T18:30:42",
+  "model": "gemma4:e2b-it-qat",
+  "internet_reachable": true,
+  "sources": [
+    {
+      "source": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "status": "generated",
+      "notes": [
+        "Gathering Feedback From Former Employees",
+        "Interview Preparation Strategies",
+        "LinkedIn Networking Strategies",
+        "LinkedIn Profile Positioning",
+        "Salary Negotiation Data Points",
+        "Successful Job Hunt Components"
+      ],
+      "segments": 2,
+      "chars_sent": 9985,
+      "calls": [
+        {
+          "seconds": 30.66,
+          "prompt_tokens": 2258,
+          "output_tokens": 620,
+          "attempts": 1
+        },
+        {
+          "seconds": 12.71,
+          "prompt_tokens": 812,
+          "output_tokens": 294,
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "source": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+      "status": "generated",
+      "notes": [
+        "Benefits of Networking",
+        "Developing A Successful Job Search",
+        "Follow Up Strategy",
+        "Networking for Success Process",
+        "Outreach Principles for Success",
+        "Reading Job Descriptions for Edits",
+        "Resume Bullet Components",
+        "Resume Format Readability Goals"
+      ],
+      "segments": 2,
+      "chars_sent": 11495,
+      "calls": [
+        {
+          "seconds": 23.8,
+          "prompt_tokens": 2209,
+          "output_tokens": 463,
+          "attempts": 1
+        },
+        {
+          "seconds": 22.38,
+          "prompt_tokens": 1288,
+          "output_tokens": 506,
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "source": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+      "status": "generated",
+      "notes": [
+        "Resume Bullet Structure Elements",
+        "Resume Content Removal Advice",
+        "Resume Formatting Readability Goals",
+        "Resume Word Repetition Strategy"
+      ],
+      "segments": 1,
+      "chars_sent": 4953,
+      "calls": [
+        {
+          "seconds": 22.06,
+          "prompt_tokens": 1630,
+          "output_tokens": 472,
+          "attempts": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "render": {
+    "written": [
+      "Successful Job Hunt Components",
+      "LinkedIn Profile Positioning",
+      "LinkedIn Networking Strategies",
+      "Interview Preparation Strategies",
+      "Gathering Feedback From Former Employees",
+      "Salary Negotiation Data Points",
+      "Reading Job Descriptions for Edits",
+      "Resume Format Readability Goals",
+      "Developing A Successful Job Search",
+      "Resume Bullet Components",
+      "Networking for Success Process",
+      "Benefits of Networking",
+      "Outreach Principles for Success",
+      "Follow Up Strategy",
+      "Resume Word Repetition Strategy",
+      "Resume Formatting Readability Goals",
+      "Resume Bullet Structure Elements",
+      "Resume Content Removal Advice"
+    ],
+    "unchanged": [],
+    "kept_manual_edits": [],
+    "removed": []
+  },
+  "passages": 92,
+  "seconds": 111.78,
+  "memory": {
+    "model_size_bytes": 1641682040,
+    "model_size_vram_bytes": 1641682040,
+    "context_length": 4096,
+    "ollama_rss_bytes": 2495512576
+  }
+}

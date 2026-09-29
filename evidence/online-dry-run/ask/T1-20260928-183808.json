@@ -1,0 +1,145 @@
+{
+  "kind": "ask",
+  "time": "2026-09-28T18:38:02",
+  "mode": "local",
+  "model": "gemma4:e2b-it-qat",
+  "runtime": "ollama",
+  "host": "http://127.0.0.1:11434",
+  "internet_reachable": true,
+  "device": {
+    "os": "Darwin 26.6.2",
+    "machine": "arm64",
+    "python": "3.13.15",
+    "chip": "Apple M1",
+    "ram_gb": 8.0
+  },
+  "runtime_version": "0.34.4",
+  "question": "What are the three sentences of a LinkedIn cold outreach message?",
+  "model_called": true,
+  "retrieved": [
+    {
+      "label": "S1",
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Exploration (lines 14-28)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Exploration",
+      "page": 1,
+      "lines": [
+        14,
+        28
+      ],
+      "score": 13.353,
+      "term_coverage": 0.83,
+      "matched_terms": [
+        "sentence",
+        "linkedin",
+        "cold",
+        "outreach",
+        "message"
+      ],
+      "text": "●​ Alumni tool\n         ○​ Navigating: Search school name in search bar > Click on school > Click on\n            “Alumni” tab on home page\n         ○​ Filtering: Search alumni by desired function (e.g. “product manager”, be sure to\n            use quotes). You can continue to filter by company\n         ○​ Connecting: If you find someone with whom you want to connect and message,\n            without using premium, select “Connect” button > Add personalized message\n  ●​ Linkedin cold outreach message guidelines (Commonality, Curiosity, and Call-to-Action)\n         ○​ Sentence #1: Prove you’re not a stranger, state what you have in common: “I’m a\n            current/alumni of (school), and I was thrilled to come across your profile.”\n         ○​ Sentence #2: State what you are looking for–learning, a referral, a job, etc: “I’m\n            torn between a PM and consulting career path and would love to learn from your\n            expertise.”\n○​ Sentence #3: Take all the friction out of the process: “Any chance you have 10\n            minutes for a quick Zoom chat?”"
+    },
+    {
+      "label": "S2",
+      "location": "vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 37-44)",
+      "path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+      "section": "Networking for Success",
+      "page": 5,
+      "lines": [
+        37,
+        44
+      ],
+      "score": 5.588,
+      "term_coverage": 0.33,
+      "matched_terms": [
+        "cold",
+        "outreach"
+      ],
+      "text": "cold-calling dream companies. It requires more desk work and more guts\n  ●​ If you are apprehensive about not being “ready” before an exploratory conversation, be\n     upfront about this and impress them with your preparation and questions. Don’t let the\n     feeling of “not be ready” prevent you from having a call\n  ●​ Outreach principles\n          ○​ 1) Short (<100 words)\n                  ■​ Only ask for 15-20 minutes\n          ○​ 2) No mention of you looking for or asking for jobs/internships"
+    },
+    {
+      "label": "S3",
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 40-44)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Network",
+      "page": 3,
+      "lines": [
+        40,
+        44
+      ],
+      "score": 5.382,
+      "term_coverage": 0.33,
+      "matched_terms": [
+        "outreach",
+        "message"
+      ],
+      "text": "○​ Example outreach message “I came across your profile and, as a fellow [College]\n            grad. I’d be thrilled to learn about your experience with [Role.] Any chance you\n            have 10 minutes to chat next week? I'd love to get your advice!\n  ●​ Networking question ideas\n        ○​ It's great to connect with you via [Name] - thanks for making the time!"
+    },
+    {
+      "label": "S4",
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Positioning (lines 32-40)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Positioning",
+      "page": 1,
+      "lines": [
+        32,
+        40
+      ],
+      "score": 3.452,
+      "term_coverage": 0.33,
+      "matched_terms": [
+        "three",
+        "linkedin"
+      ],
+      "text": "●​ Linkedin recruiter gives people access to half a billion professionals globally. The tool is\n     most geared towards 1) number of instances of key words (e.g. “brand marketing,”\n     “product marketing,” etc.) 2) closeness of connection, and 3) photo\n  ●​ Most important key word is the job title itself; most important placement: 1) Headline 2)\n     Summary/About 3) Experience\n         ○​ The algorithm places a high value on words in these three categories because\n            they are the sections with the smallest character limit, placing greater value on\n            the words within them\n         ○​ Headline: “Aspiring Product Manager” or “Seeking Product Manager Roles”"
+    },
+    {
+      "label": "S5",
+      "location": "vault/raw/Aug 2025 - Resume Only Workshop.pdf p.2 §Resume Workshop #1 (lines 33-37)",
+      "path": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+      "section": "Resume Workshop #1",
+      "page": 2,
+      "lines": [
+        33,
+        37
+      ],
+      "score": 3.359,
+      "term_coverage": 0.17,
+      "matched_terms": [
+        "three"
+      ],
+      "text": "●​ Gen AI quality controls–is everything true, check for too much jargon (including\n    adjectives and adverbs), 3-letter acronyms, read it outloud, and ensure the bullets\n    include the three elements (what, how, why)\n ●​ If you don’t know what the impact for a bullet is (this happens often in consulting), put\n    down what the projected impact would be"
+    }
+  ],
+  "answer": "The three sentences of a LinkedIn cold outreach message are:\n1. Prove you’re not a stranger, state what you have in common: “I’m a current/alumni of (school), and I was thrilled to come across your profile” [S1].\n2. State what you are looking for–learning, a referral, a job, etc: “I’m torn between a PM and consulting career path and would love to learn from your expertise” [S1].\n3. Take all the friction out of the process: “Any chance you have 10 minutes for a quick Zoom chat?” [S1].",
+  "citation_check": {
+    "cited": [
+      1
+    ],
+    "invalid": [],
+    "insufficient": false,
+    "status": "ok"
+  },
+  "response_seconds": 6.01,
+  "prompt_tokens": 1135,
+  "output_tokens": 133,
+  "memory": {
+    "model_size_bytes": 1641682040,
+    "model_size_vram_bytes": 1641682040,
+    "context_length": 4096,
+    "ollama_rss_bytes": 2548940800
+  },
+  "test": {
+    "id": "T1",
+    "question": "What are the three sentences of a LinkedIn cold outreach message?",
+    "expect": "answer",
+    "expected_sources": [
+      "vault/raw/Aug 2025 - Linkedin Training .pdf"
+    ],
+    "expected_passage": "p.1 §Exploration: Commonality, Curiosity, Call-to-Action. Sentence 1 states what you have in common; sentence 2 what you are looking for; sentence 3 takes the friction out (e.g. 'Any chance you have 10 minutes for a quick Zoom chat?')."
+  },
+  "auto_checks": {
+    "expected_source_retrieved": true,
+    "expected_behavior": "answer",
+    "behavior_matches": true
+  }
+}
