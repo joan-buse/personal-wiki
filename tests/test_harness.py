@@ -179,6 +179,16 @@ class HarnessTest(unittest.TestCase):
         self.assertEqual(c, "Resume Word Repetition Strategy")    # distinct subject kept apart
         self.assertEqual(sorted(store.notes["resume bullet components"]["contributions"]), ["src-a", "src-b"])
 
+    def test_reingest_keeps_previous_title_for_similar_topic(self):
+        from wikicli.notes import NoteStore
+        store = NoteStore(self.cfg)
+        t = {"folder": "Resume", "summary": "s", "details": ["d"], "related": []}
+        store.add_topic("src-a", {**t, "title": "Resume Content Optimization"}, "m")
+        store.remove_source("src-a")                                  # re-ingest starts
+        got = store.add_topic("src-a", {**t, "title": "Resume Content Keywords"}, "m",
+                              previous=("Resume Content Optimization",))
+        self.assertEqual(got, "Resume Content Optimization")
+
     def test_clean_title(self):
         self.assertEqual(clean_title("developing a successful job search"), "Developing a Successful Job Search")
         self.assertEqual(clean_title("gpu parallel training"), "Gpu Parallel Training")

@@ -289,7 +289,7 @@
         "date": "2026-09-28"
       }
     },
-    "rendered_sha": "565a80f4aa436c652749af012c12434fdfda5e45e85e8b211e0d925a26886288",
+    "rendered_sha": "30b80a4b11d89001ec9240b4708fe344791c120d72b58e545653911875109201",
     "links": [
       {
         "title": "Resume Content Optimization",
@@ -316,28 +316,36 @@
         "date": "2026-09-28"
       },
       "src-aug-2025-resume-only-workshop": {
-        "summary": "Resume formatting should prioritize readability because recruiters spend only 7-8 seconds per resume, acting as a marketing tool.",
+        "summary": "Formatting should prioritize readability because recruiters spend only 7-8 seconds per resume. Different formats are suggested based on career trajectory.",
         "details": [
-          "Goal is readability for recruiters who spend 7-8 seconds per resume",
+          "Goal is readability because recruiters spend 7-8 seconds per resume",
           "Chronological format is for classic/traditional industries or single pivots",
           "Hybrid format uses job titles followed by function/skill bullets",
-          "Functional format is recommended for big pivots, unfamiliar industries, or transferable skills"
+          "Functional format is most rated for big pivots, unfamiliar industries, or transferable skills"
         ],
         "related": [
           {
-            "title": "Resume Format Guidelines",
-            "reason": "This note summarizes the different resume formats and their recommended use cases."
+            "title": "Resume Content Keywords",
+            "reason": "Formatting advice is closely tied to using keywords from job descriptions in the resume."
           }
         ],
         "model": "gemma4:e2b-it-qat",
         "date": "2026-09-28"
       }
     },
-    "rendered_sha": "88c880e428d4c809f73403672c45464866415fedda9636a251afc7e4de73d27f",
+    "rendered_sha": "2c3b5cde627008924cbce357ead393c093379f225322f9f9fdaa25b8860738f3",
     "links": [
       {
-        "title": "Resume Content Optimization",
-        "reason": "Both focus on tailoring resume language to match job descriptions."
+        "title": "Resume Content Keywords",
+        "reason": "Optimization involves tailoring resume language to job descriptions."
+      },
+      {
+        "title": "Writing Effective Resume Bullets",
+        "reason": "Resume bullets should include at least three elements: What, How, and Impact, and should be explicit rather than mysterious."
+      },
+      {
+        "title": "Resume Reading Techniques",
+        "reason": "This session advises looking for repeated words in job descriptions and incorporating them into resume bullets to match the role's language."
       }
     ]
   },
@@ -359,36 +367,37 @@
         "date": "2026-09-28"
       },
       "src-aug-2025-resume-only-workshop": {
-        "summary": "Resume bullets should include at least three elements: What, How, and Impact. They should be explicit rather than mysterious to generate curiosity.",
+        "summary": "Resume bullets should include at least three elements: What, How, and Impact. The starting point for a bullet depends on whether you are emphasizing impact, how, or pivoting.",
         "details": [
-          "Resume bullets should include at least three elements: What, How, and Impact",
-          "Start with 'impact' if it is large; start with 'how' if you are pivoting industry or role",
-          "Adjectives and adverbs make a bullet long",
-          "Use abbreviations only if moving within the same industry or function"
+          "Resume bullets should include 3/4 elements at a minimum",
+          "What: The thing, or “work object,” you made",
+          "How: What skills you used to make that work object (skills should be tailored to the employer/role)",
+          "Impact: Measurable outcome ideally",
+          "Why: Why was it important, was it part of a company’s bigger strategy? How often did you do it, etc."
         ],
         "related": [
           {
-            "title": "Writing Effective Resume Bullets",
-            "reason": "This source provides specific elements and structure for resume bullets."
+            "title": "Resume Content Keywords",
+            "reason": "This relates to the advice to look for repeated words in job descriptions and incorporate them into resume bullets."
           }
         ],
         "model": "gemma4:e2b-it-qat",
         "date": "2026-09-28"
       }
     },
-    "rendered_sha": "55150703e74a9e915c2dc77dca135817799e4806a3a4bd38161e5723006bf6ed",
+    "rendered_sha": "6a790ea677186157fc3b60d3fd7cf2a7b1235b63c7955c98e55fc6c572e4c23a",
     "links": [
       {
-        "title": "Resume Content Optimization",
-        "reason": "Both focus on tailoring resume language to match job descriptions."
+        "title": "Resume Content Keywords",
+        "reason": "Relates to incorporating keywords into resume bullets."
       },
       {
         "title": "Resume Reading Techniques",
-        "reason": "Both advise looking for repeated words in job descriptions to incorporate into resume content."
+        "reason": "Advises looking for repeated words in job descriptions to match resume language."
       },
       {
         "title": "Resume Format Guidelines",
-        "reason": "Resume format depends on the intended next move, which relates to the overall career process."
+        "reason": "Discusses resume format based on the intended next move in the career process."
       }
     ]
   },
@@ -567,65 +576,70 @@
       }
     ]
   },
-  "resume content optimization": {
-    "title": "Resume Content Optimization",
+  "resume application tips": {
+    "title": "Resume Application Tips",
     "folder": "Resume",
     "contributions": {
       "src-aug-2025-resume-only-workshop": {
-        "summary": "Optimize resume content by looking for repeated words in job descriptions and tailoring your resume language to match the role's vocabulary.",
+        "summary": "Tips include being prepared to commit to specific dates, addressing long phrases, and using humor in an additional section.",
         "details": [
-          "Look for repeated words in a target job description and repeat them in resume bullets",
-          "Highlight experience with stakeholders if the posting mentions their customers",
-          "For niche companies, pick attributes appealing to the target audience like revenue or customer size"
+          "If the posting says “The successful candidate must commit to XYZ dates,” be ready to commit to these. Don’t ask for an exception",
+          "Really long phrases (bullets that are extra long or at a greater level of detail than the others) suggest this is a pain point in the company; network to confirm this is the case and emphasize the skills that can “fix” or combat this",
+          "Make sure you have an additional section and be humorous to entice the reader to ask you about it. The section should be 1-3 lines"
         ],
         "related": [
           {
-            "title": "Resume Reading Techniques",
-            "reason": "This relates to how to analyze job descriptions to inform resume content."
+            "title": "Networking Outreach Principles",
+            "reason": "The advice to network to confirm pain points relates to the general principle of networking."
           }
         ],
         "model": "gemma4:e2b-it-qat",
         "date": "2026-09-28"
       }
     },
-    "rendered_sha": "bcdeb3eee1c8d8611f7709bf648d272881ede0d7a8dfaa62b87ef6978b9e76fe",
+    "rendered_sha": "91c34d889c652018bf848f7c831eccdfecd41dfafe6917c45648dd105949ecc9",
     "links": [
       {
-        "title": "Resume Reading Techniques",
-        "reason": "Both focus on looking for repeated words in job descriptions."
+        "title": "Resume Format Guidelines",
+        "reason": "Resume format depends on the intended next move, which is related to application tips."
+      },
+      {
+        "title": "Writing Effective Resume Bullets",
+        "reason": "Resume bullets should include specific elements, which relates to addressing long phrases in the resume."
+      },
+      {
+        "title": "Resume Content Keywords",
+        "reason": "Optimization involves tailoring resume language to job descriptions, which is a key part of application tips."
       }
     ]
   },
-  "resume application tips": {
-    "title": "Resume Application Tips",
+  "resume content keywords": {
+    "title": "Resume Content Keywords",
     "folder": "Resume",
     "contributions": {
       "src-aug-2025-resume-only-workshop": {
-        "summary": "Provide specific advice on what to remove from a resume and how to handle specific application requirements.",
+        "summary": "Optimization involves tailoring resume language to job descriptions and managing specific elements like GPA and awards.",
         "details": [
-          "Remove undergrad GPA unless you have space",
+          "Look for repeated words in a target job description and try to repeat those in your resume bullets",
+          "Remove undergrad GPA because the moment it’s added it opens you up to comparison",
           "Remove undergrad awards unless you have space",
-          "Put all 'applied innovation' classwork in experience",
-          "Make sure to have an additional humorous section to entice the reader"
+          "Use abbreviations only if you are moving within the same industry or function"
         ],
-        "related": [],
+        "related": [
+          {
+            "title": "Resume Reading Techniques",
+            "reason": "The advice to look for repeated words in job descriptions directly relates to resume reading techniques."
+          }
+        ],
         "model": "gemma4:e2b-it-qat",
         "date": "2026-09-28"
       }
     },
-    "rendered_sha": "1a08ab58d75a2cb7e84fe6857383aa583d348179f9d37ba944a116fb8525b44e",
+    "rendered_sha": "9c63c6588d279e35f038f23c003fd4c03be1588cee1bb4ed63d95dc6440afe47",
     "links": [
       {
         "title": "Resume Reading Techniques",
-        "reason": "Provides advice on matching resume language to job descriptions."
-      },
-      {
-        "title": "Resume Content Optimization",
-        "reason": "Focuses on tailoring resume language to match role vocabulary."
-      },
-      {
-        "title": "Resume Format Guidelines",
-        "reason": "Offers advice on resume format based on the intended next move."
+        "reason": "Optimization involves tailoring resume language to job descriptions and managing specific elements like GPA and awards."
       }
     ]
   }

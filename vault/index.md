@@ -22,8 +22,8 @@ Start here. Notes are grouped by topic; each links back to its original source i
 ## Resume
 
 - [[LinkedIn Positioning Strategy]] — Positioning on LinkedIn involves optimizing profile sections, especially the headline and summary, using keywords from dream job postings.
-- [[Resume Application Tips]] — Provide specific advice on what to remove from a resume and how to handle specific application requirements.
-- [[Resume Content Optimization]] — Optimize resume content by looking for repeated words in job descriptions and tailoring your resume language to match the role's vocabulary.
+- [[Resume Application Tips]] — Tips include being prepared to commit to specific dates, addressing long phrases, and using humor in an additional section.
+- [[Resume Content Keywords]] — Optimization involves tailoring resume language to job descriptions and managing specific elements like GPA and awards.
 - [[Resume Format Guidelines]] — The recommended resume formats depend on the intended next move, focusing on readability for recruiters who spend only 7-8 seconds per resume.
 - [[Resume Reading Techniques]] — This session advises looking for repeated words in job descriptions and incorporating them into resume bullets to match the role's language.
 - [[Writing Effective Resume Bullets]] — Resume bullets should include at least three elements: What, How, and Impact, and should be explicit rather than mysterious.
@@ -32,4 +32,4 @@ Start here. Notes are grouped by topic; each links back to its original source i
 
 - [[raw/Aug 2025 - Linkedin Training .pdf|Aug 2025 - Linkedin Training]] → [[Interview Preparation Strategies]], [[LinkedIn Exploration Tools]], [[LinkedIn Job Hunt Tactics]], [[LinkedIn Networking Techniques]], [[LinkedIn Positioning Strategy]], [[Salary Negotiation Data Points]], [[Successful Job Hunt Components]]
 - [[raw/Aug 2025 - Resume & Networking Training.pdf|Aug 2025 - Resume & Networking Training]] → [[Developing Company Focus List]], [[Networking Follow Up Strategy]], [[Networking Outreach Principles]], [[Networking for Success Process]], [[Process to Advance Career]], [[Resume Format Guidelines]], [[Resume Reading Techniques]], [[Writing Effective Resume Bullets]]
-- [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]] → [[Resume Application Tips]], [[Resume Content Optimization]], [[Resume Format Guidelines]], [[Writing Effective Resume Bullets]]
+- [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]] → [[Resume Application Tips]], [[Resume Content Keywords]], [[Resume Format Guidelines]], [[Writing Effective Resume Bullets]]

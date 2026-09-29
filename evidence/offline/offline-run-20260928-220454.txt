@@ -1,0 +1,243 @@
+Offline run started Mon Sep 28 22:04:54 PDT 2026
+
+$ ./wiki status
+{
+  "time": "2026-09-28T22:04:54",
+  "mode": "local",
+  "model": "gemma4:e2b-it-qat",
+  "runtime": "ollama",
+  "host": "http://127.0.0.1:11434",
+  "internet_reachable": false,
+  "device": {
+    "os": "Darwin 26.6.2",
+    "machine": "arm64",
+    "python": "3.13.15",
+    "chip": "Apple M1",
+    "ram_gb": 8.0
+  },
+  "runtime_version": "0.34.4"
+}
+local models: gemma4:e2b-it-qat
+model gemma4:e2b-it-qat: available
+memory: model loaded n/a (on GPU n/a), ollama processes RSS 0.02 GB (model loads on first call)
+passages indexed: 104
+
+$ ./wiki --help
+usage: wiki [-h] [--model MODEL] [--host HOST] COMMAND ...
+
+Personal wiki CLI: your own notes + a local Gemma model, fully offline.
+
+commands:
+  wiki ingest [PATH] [--force]   read vault/raw/, write linked notes in vault/wiki/, rebuild the index
+  wiki search "QUERY"            show original passages + paths (no model, no generated answer)
+  wiki ask "QUESTION"            standalone, neutral answer from retrieved passages with citations
+  wiki chat                      personal assistant with conversation memory for this session
+  wiki test                      run the ask-mode question tests in eval/questions.json
+  wiki modecheck                 run the scripted chat/search/ask boundary checks
+  wiki status                    show model, runtime, memory use and offline state
+
+positional arguments:
+  COMMAND
+    ingest       generate wiki notes from vault/raw/ and rebuild the index
+    search       show matching original passages (no model)
+    ask          grounded answer with citations, independent of chat
+    chat         personal assistant session
+    test         run eval/questions.json in ask mode and save evidence cards
+    modecheck    run eval/mode_checks.json (chat/search/ask boundaries)
+    status       model, runtime, memory and network state
+
+options:
+  -h, --help     show this help message and exit
+  --model MODEL  Ollama model tag (default from wiki.json, else gemma4:e2b-it-
+                 qat)
+  --host HOST    Ollama URL (default http://127.0.0.1:11434)
+
+setup (once, while online):
+  1. install Ollama and pull the model:   ollama pull gemma4:e2b-it-qat
+  2. put 3+ original sources (.md/.txt/.pdf) in vault/raw/
+  3. wiki ingest
+
+configuration: wiki.json in the project root (model, num_ctx, top_k, ...),
+or env WIKI_MODEL / OLLAMA_HOST_URL, or --model / --host flags.
+Mode: local is the default and only implemented execution mode.
+
+$ ./wiki ingest vault/raw/Aug 2025 - Resume Only Workshop.pdf --force
+Ingesting vault/raw with gemma4:e2b-it-qat (local)
+  > vault/raw/Aug 2025 - Resume Only Workshop.pdf: asking gemma4:e2b-it-qat for wiki notes ...
+    notes: Resume Application Tips, Resume Content Keywords, Resume Format Guidelines, Writing Effective Resume Bullets
+  > linking 4 notes ...
+
+Notes written: 4, unchanged: 13, removed: 0
+Passages indexed: 104  |  60.98s  |  log: evidence/ingest/ingest-20260928-220555-533184.json
+Memory: model loaded 3.32 GB (on GPU 3.32 GB), ollama processes RSS 1.73 GB
+
+$ ./wiki ingest
+Ingesting vault/raw with gemma4:e2b-it-qat (local)
+  = vault/raw/Aug 2025 - Linkedin Training .pdf unchanged (use --force to regenerate)
+  = vault/raw/Aug 2025 - Resume & Networking Training.pdf unchanged (use --force to regenerate)
+  = vault/raw/Aug 2025 - Resume Only Workshop.pdf unchanged (use --force to regenerate)
+
+Notes written: 0, unchanged: 17, removed: 0
+Passages indexed: 104  |  0.17s  |  log: evidence/ingest/ingest-20260928-220555-923108.json
+
+$ ./wiki search cold outreach message --save
+search (no model) · scope=raw · "cold outreach message"
+
+[1] vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Exploration (lines 14-28)  score=6.957  terms=cold,outreach,message
+    ●​ Alumni tool
+             ○​ Navigating: Search school name in search bar > Click on school > Click on
+                “Alumni” tab on home page
+             ○​ Filtering: Search alumni by desired function (e.g. “product manager”, be sure to
+                use quotes). You can continue to filter by company
+             ○​ Connecting: If you find someone with whom you want to connect and message,
+                without using premium, select “Connect” button > Add personalized message
+      ●​ Linkedin cold outreach message guidelines (Commonality, Curiosity, and Call-to-Action)
+             ○​ Sentence #1: Prove you’re not a stranger, state what you have in common: “I’m a
+                current/alumni of (school), and I was thrilled to come across your profile.”
+             ○​ Sentence #2: State what you are looking for–learning, a referral, a job, etc: “I’m
+                torn between a PM and consulting career path and would love to learn from your
+                expertise.”
+    ○​ Sentence #3: Take all the friction out of the process: “Any chance you have 10
+                minutes for a quick Zoom chat?”
+
+[2] vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 37-44)  score=5.545  terms=cold,outreach
+    cold-calling dream companies. It requires more desk work and more guts
+      ●​ If you are apprehensive about not being “ready” before an exploratory conversation, be
+         upfront about this and impress them with your preparation and questions. Don’t let the
+         feeling of “not be ready” prevent you from having a call
+      ●​ Outreach principles
+              ○​ 1) Short (<100 words)
+                      ■​ Only ask for 15-20 minutes
+              ○​ 2) No mention of you looking for or asking for jobs/internships
+
+[3] vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 40-44)  score=5.329  terms=outreach,message
+    ○​ Example outreach message “I came across your profile and, as a fellow [College]
+                grad. I’d be thrilled to learn about your experience with [Role.] Any chance you
+                have 10 minutes to chat next week? I'd love to get your advice!
+      ●​ Networking question ideas
+            ○​ It's great to connect with you via [Name] - thanks for making the time!
+
+[4] vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 7-17)  score=3.249  terms=message
+    ●​ Second degree connections
+            ○​ Search “[Name of company] [Role]” in search bar and look for those that have a
+               shared connection (2nd degree connection) > Select 2nd degree connection >
+               Click name of mutual connection > Send message to mutual connectino
+            ○​ For example, if you want to reach out to John Doe on Google’s Product
+               Marketing team, and you have a mutual connection Jane, reach out to Jane via
+               messaging with the following
+                   ■​ “Hi Jane, Would you mind introducing me to John? I’m thinking about
+                      applying for jobs in his field but want to make sure it is a good fit. If you’re
+                      willing to do so, I’ve included a message below that you can just forward
+                      over
+
+[5] vault/raw/Aug 2025 - Linkedin Training .pdf p.4 §Research (lines 22-30)  score=2.524  terms=message
+    ●​ Most unfiltered feedback will come from people who used to work at the company
+             ○​ All People > Advanced search > Past company [Name of company]
+             ○​ Example message: “Just saw that you used to work at [Company] and was quite
+                 intrigued. Especially since I'm considering an offer there right now. Might you
+                 have 15 minutes to chat this week about your experience?"
+             ○​ Ask them these two essential questions:
+                      ■​ Why did you leave?
+                      ■​ Would you ever work there again?
+      ●​ The most useful data point in salary negotiations is how much the competition is paying
+
+saved: evidence/search/search-20260928-220556.md
+
+$ ./wiki test
+
+=== T1: What are the three sentences of a LinkedIn cold outreach message?
+Sentence #1 should prove you are not a stranger by stating what you have in common, such as, "I’m a current/alumni of (school), and I was thrilled to come across your profile" [S1]. Sentence #2 should state what you are looking for, such as, "I’m torn between a PM and consulting career path and would love to learn from your expertise" [S1]. Sentence #3 should take all the friction out of the process by asking, "Any chance you have 10 minutes for a quick Zoom chat?" [S1].
+-> retrieved expected source: True | behavior ok: True | citations: ok | 8.03s | evidence/ask/T1-20260928-220604.md
+
+=== T2: Should I put my college grade point average on my resume?
+Remove your undergraduate GPA from your resume because adding it opens you up to comparison [S2].
+-> retrieved expected source: True | behavior ok: True | citations: ok | 4.48s | evidence/ask/T2-20260928-220609.md
+
+=== T3: What should a networking outreach message include?
+A networking outreach message should include elements such as proving you are not a stranger by stating what you have in common, such as being a current or alumni of a school [S2]. You should state what you are looking for, like learning from someone's expertise, a referral, or a job [S2]. Finally, you should take all the friction out of the process by asking if they have time for a quick chat, such as a 10-minute Zoom call [S2]. Outreach messages should also be short, under 100 words, and only ask for 15-20 minutes [S3].
+-> retrieved expected source: True | behavior ok: True | citations: ok | 8.85s | evidence/ask/T3-20260928-220618.md
+
+=== T4: Who presented the LinkedIn training workshop?
+Insufficient evidence: The sources do not state who presented the LinkedIn training workshop.
+-> retrieved expected source: None | behavior ok: True | citations: ok | 4.38s | evidence/ask/T4-20260928-220622.md
+
+summary: evidence/ask/summary-20260928-220622.md
+Automatic checks are not the grade: open each card and write the human assessment.
+
+$ ./wiki modecheck
+
+you › what can we do?
+assistant › We can work on your wiki content.
+
+I can help you with:
+
+*   **Brainstorming:** Generating ideas for any of your topics (Job Search, Networking, Resume, etc.).
+*   **Drafting:** Creating content based on your notes.
+*   **Planning:** Structuring strategies for interviews, job hunts, or career advancement.
+*   **Rewriting:** Refining existing text to be clearer or more impactful.
+*   **Following Up:** Iterating on previous drafts or ideas.
+
+To get started, pick a topic. For example, we could start by brainstorming specific **Job Search** strategies or drafting content for your **Resume Content Keywords**.
+
+What's the first thing on your mind?
+  (retrieval off: question about the assistant itself)
+
+you › what can you help me with?
+assistant › I can help you build, refine, and organize your wiki content.
+
+My capabilities are:
+
+*   **Brainstorming:** We can generate ideas for any area, like new networking tactics or interview question preparation.
+*   **Drafting:** I can write initial drafts for articles, bullet points, or strategy outlines.
+*   **Planning:** We can map out processes, such as a step-by-step guide for advancing your career or a plan for a job hunt.
+*   **Rewriting:** If you have existing text, I can make it more concise, direct, or persuasive.
+*   **Following Up:** We can take any idea or draft and iterate on it until it's exactly what you need.
+
+To start, tell me which section of the wiki you want to focus on right now. For instance, we could look at your **LinkedIn Networking Techniques** or draft some **Resume Content Keywords**.
+  (retrieval off: question about the assistant itself)
+
+you › Draft a short 3-step plan for updating my LinkedIn profile this week.
+assistant › Here is a short 3-step plan for updating your LinkedIn profile this week, based on the notes I have.
+
+**Step 1: Optimize Your Headline and About Section**
+Review your current profile copy. Focus on clearly stating your desired role and key skills. Use keywords that align with the roles you are targeting. [Suggestion: Based on [S4], consider emphasizing keywords derived from positions you want to emulate.]
+
+**Step 2: Engage in Targeted Networking**
+Focus on connecting with people in your desired field or company. Use the networking techniques mentioned:
+*   Search for alumni using the company and role filters [S2].
+*   Use personalized outreach messages, like the example provided, to ask for advice or a brief chat [S1], [S2].
+
+**Step 3: Audit Your Visibility Settings**
+Check your privacy settings to ensure you are maximizing your visibility for job seekers. Make sure to review settings related to job seeking preferences if you plan to apply for roles soon [S3].
+
+How does that plan look? We can adjust the focus if you want to prioritize networking over profile optimization this week.
+  (retrieval ON: drafting request on a topic in the notes (profile, week))
+
+you › make that shorter
+assistant › Here is a condensed 3-step plan for updating your LinkedIn profile this week:
+
+**Step 1: Optimize Headline & About**
+Update your headline and summary using targeted keywords relevant to your goals. [Suggestion: Refer to [vault/raw/Aug 2025 - Linkedin Training .pdf p.2 §Positioning (lines 13-20)] for keyword ideas.]
+
+**Step 2: Targeted Networking**
+Connect with 5-10 relevant professionals this week using personalized outreach messages. [Suggestion: Use the outreach structure from [vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 40-44)].]
+
+**Step 3: Verify Job Search Settings**
+Check your visibility and job seeking settings to ensure they are optimized for your current search.
+
+Does this shorter version work better for your schedule?
+  (retrieval off: follow-up on the conversation)
+
+you › By the way, my study group meets in the Blue Lounge on Fridays.
+assistant › Understood. I have noted that your study group meets in the Blue Lounge on Fridays.
+
+Keep that in mind for our conversation.
+
+What would you like to work on next?
+  (retrieval off: general conversation; no strong note match)
+
+ask › Insufficient evidence: The provided sources do not contain information about where a study group meets.
+
+saved: evidence/mode_checks/modecheck-20260928-220706.md
+
+Offline run finished Mon Sep 28 22:07:06 PDT 2026

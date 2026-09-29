@@ -23,7 +23,7 @@ This session advises looking for repeated words in job descriptions and incorpor
 
 ## Related notes
 
-- [[Resume Content Optimization]] — Both focus on tailoring resume language to match job descriptions.
+- [[Resume Content Keywords]] — Both focus on tailoring resume language to match job descriptions.
 
 ## Sources
 

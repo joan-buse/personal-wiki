@@ -15,7 +15,7 @@ updated: 2026-09-28
 
 Resume bullets should include at least three elements: What, How, and Impact, and should be explicit rather than mysterious.
 
-From [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]]: Resume bullets should include at least three elements: What, How, and Impact. They should be explicit rather than mysterious to generate curiosity.
+From [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]]: Resume bullets should include at least three elements: What, How, and Impact. The starting point for a bullet depends on whether you are emphasizing impact, how, or pivoting.
 
 ## Details
 
@@ -24,16 +24,17 @@ From [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]]
 - All bullets should be explicit rather than intentionally mysterious to generate curiosity or a follow-up question *(source: [[raw/Aug 2025 - Resume & Networking Training.pdf|Aug 2025 - Resume & Networking Training]])*
 - Adjectives and adverbs make a bullet long *(source: [[raw/Aug 2025 - Resume & Networking Training.pdf|Aug 2025 - Resume & Networking Training]])*
 - Use abbreviations only if you are moving within the same industry or function *(source: [[raw/Aug 2025 - Resume & Networking Training.pdf|Aug 2025 - Resume & Networking Training]])*
-- Resume bullets should include at least three elements: What, How, and Impact *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
-- Start with 'impact' if it is large; start with 'how' if you are pivoting industry or role *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
-- Adjectives and adverbs make a bullet long *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
-- Use abbreviations only if moving within the same industry or function *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
+- Resume bullets should include 3/4 elements at a minimum *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
+- What: The thing, or “work object,” you made *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
+- How: What skills you used to make that work object (skills should be tailored to the employer/role) *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
+- Impact: Measurable outcome ideally *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
+- Why: Why was it important, was it part of a company’s bigger strategy? How often did you do it, etc. *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
 
 ## Related notes
 
-- [[Resume Content Optimization]] — Both focus on tailoring resume language to match job descriptions.
-- [[Resume Reading Techniques]] — Both advise looking for repeated words in job descriptions to incorporate into resume content.
-- [[Resume Format Guidelines]] — Resume format depends on the intended next move, which relates to the overall career process.
+- [[Resume Content Keywords]] — This relates to the advice to look for repeated words in job descriptions and incorporate them into resume bullets.
+- [[Resume Reading Techniques]] — Advises looking for repeated words in job descriptions to match resume language.
+- [[Resume Format Guidelines]] — Discusses resume format based on the intended next move in the career process.
 
 ## Sources
 

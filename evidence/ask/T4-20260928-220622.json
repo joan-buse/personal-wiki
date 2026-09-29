@@ -1,0 +1,135 @@
+{
+  "kind": "ask",
+  "time": "2026-09-28T22:05:56",
+  "mode": "local",
+  "model": "gemma4:e2b-it-qat",
+  "runtime": "ollama",
+  "host": "http://127.0.0.1:11434",
+  "internet_reachable": false,
+  "device": {
+    "os": "Darwin 26.6.2",
+    "machine": "arm64",
+    "python": "3.13.15",
+    "chip": "Apple M1",
+    "ram_gb": 8.0
+  },
+  "runtime_version": "0.34.4",
+  "question": "Who presented the LinkedIn training workshop?",
+  "model_called": true,
+  "retrieved": [
+    {
+      "label": "S1",
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Linkedin Training (lines 2-10)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Linkedin Training",
+      "page": 1,
+      "lines": [
+        2,
+        10
+      ],
+      "score": 2.346,
+      "term_coverage": 0.5,
+      "matched_terms": [
+        "linkedin",
+        "training"
+      ],
+      "text": "●​ No resume alone is going to get you a job. A successful job hunt is equal parts of five\n     things–exploration, research, positioning, networking, and job hunt\n         ○​ You have to explore the industry/role you specifically want, research the\n            company you want, position yourself accordingly, network to get an inside\n            referral, and then submit your resume.\n                ■​ Recruiters love referrals because data shows that referred candidates get\n                    hired faster and stay longer\n  ●​ The average recruiter is juggling 30-40 open roles and the average job listing attracts\n     250 resumes. The best recruiters used Linkedin, and they search by job title"
+    },
+    {
+      "label": "S2",
+      "location": "vault/raw/Aug 2025 - Resume Only Workshop.pdf p.2 §Resume Workshop #1 (lines 33-37)",
+      "path": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+      "section": "Resume Workshop #1",
+      "page": 2,
+      "lines": [
+        33,
+        37
+      ],
+      "score": 2.125,
+      "term_coverage": 0.25,
+      "matched_terms": [
+        "workshop"
+      ],
+      "text": "●​ Gen AI quality controls–is everything true, check for too much jargon (including\n    adjectives and adverbs), 3-letter acronyms, read it outloud, and ensure the bullets\n    include the three elements (what, how, why)\n ●​ If you don’t know what the impact for a bullet is (this happens often in consulting), put\n    down what the projected impact would be"
+    },
+    {
+      "label": "S3",
+      "location": "vault/raw/Aug 2025 - Resume Only Workshop.pdf p.1 §Resume Workshop #2 (lines 30-40)",
+      "path": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+      "section": "Resume Workshop #2",
+      "page": 1,
+      "lines": [
+        30,
+        40
+      ],
+      "score": 1.651,
+      "term_coverage": 0.25,
+      "matched_terms": [
+        "workshop"
+      ],
+      "text": "●​ If you are pivoting, the first question you will get in an interview is why the change. If\n    there is doubt about your skills, network to have an internal advocate convince internally\n    that you can do the role\n ●​ If you worked at a niche company (or one that would not be widely known) pick attributes\n    that would be appealing to your target audience–revenue, number of countries,\n    examples of customers/big brands, “the biggest [industry] company and first tech\n    unicorn”\n ●​ There are attributes you can use to connect with new companies when making a\n    pivot–rapid growth in your resume, similar customer bases (size, region, industry), B2B\n    vs B2C\n ●​ Applicant tracking system (ATS)"
+    },
+    {
+      "label": "S4",
+      "location": "vault/raw/Aug 2025 - Resume Only Workshop.pdf p.1 §Resume Workshop #2 (lines 2-14)",
+      "path": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+      "section": "Resume Workshop #2",
+      "page": 1,
+      "lines": [
+        2,
+        14
+      ],
+      "score": 1.541,
+      "term_coverage": 0.25,
+      "matched_terms": [
+        "workshop"
+      ],
+      "text": "●​ Look for repeated words in a target job description and try to repeat those in your\n    resume bullets\n         ○​ “Creativity” = highlight thinking outside the box\n         ○​ “Monetization” = what did you monetize\n         ○​ “Cross-functional leadership” = working with multiple teams simultaneously\n         ○​ Particularly, if they tell you who their customers are, and you have experience\n            working with these stakeholders, highlight this\n ●​ If the posting says “The successful candidate must commit to XYZ dates,” be ready to\n    commit to these. Don’t ask for an exception\n ●​ Really long phrases (bullets that are extra long or at a greater level of detail than the\n    others) suggest this is a pain point in the company; network to confirm this is the case\n    and emphasize the skills that can “fix” or combat this\n ●​ Most job descriptions are templates that hiring managers then tweak for the most"
+    },
+    {
+      "label": "S5",
+      "location": "vault/raw/Aug 2025 - Resume Only Workshop.pdf p.2 §Resume Workshop #1 (lines 16-32)",
+      "path": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+      "section": "Resume Workshop #1",
+      "page": 2,
+      "lines": [
+        16,
+        32
+      ],
+      "score": 1.518,
+      "term_coverage": 0.25,
+      "matched_terms": [
+        "workshop"
+      ],
+      "text": "●​ Resume bullets should include 3/4 elements at a minimum\n         ○​ What: The thing, or “work object,” you made\n         ○​ How: What skills you used to make that work object (skills should be tailored to\n             the employer/role)\n         ○​ Impact: Measurable outcome ideally\n         ○​ Why: Why was it important, was it part of a company’s bigger strategy? How\n             often did you do it, etc.\n ●​ Start with “impact” if it is large; start with “how” if you are pivoting industry, or potentially\n    role, where the vocabulary is not the same\n ●​ All bullets should be explicit rather than intentionally mysterious to generate curiosity or a\n    follow-up question\n ●​ Adjectives and adverbs is what makes a bullet long\n ●​ Use abbreviations only if you are moving within the same industry or function\n ●​ Gen AI use cases\n         ○​ Rewrite your bullets\n         ○​ Point out what’s moving\n         ○​ Improve readability"
+    }
+  ],
+  "answer": "Insufficient evidence: The sources do not state who presented the LinkedIn training workshop.",
+  "citation_check": {
+    "cited": [],
+    "invalid": [],
+    "insufficient": true,
+    "status": "ok"
+  },
+  "response_seconds": 4.38,
+  "prompt_tokens": 1285,
+  "output_tokens": 16,
+  "memory": {
+    "model_size_bytes": 3568440440,
+    "model_size_vram_bytes": 3568440440,
+    "context_length": 4096,
+    "ollama_rss_bytes": 1876295680
+  },
+  "test": {
+    "id": "T4",
+    "question": "Who presented the LinkedIn training workshop?",
+    "expect": "insufficient",
+    "expected_sources": [],
+    "expected_passage": "None: no source names a presenter. Expected: 'Insufficient evidence'."
+  },
+  "auto_checks": {
+    "expected_source_retrieved": null,
+    "expected_behavior": "insufficient",
+    "behavior_matches": true
+  }
+}

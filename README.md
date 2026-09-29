@@ -1,6 +1,6 @@
 # Personal Wiki CLI — local Gemma + RAG
 
-> **Draft.** Every `TODO` must be replaced with real, measured results. Nothing here is a claimed result yet.
+> All results below come from saved runs in [`evidence/`](evidence/). The required run was done **offline** (Wi-Fi off, CLI restarted) on 2026-09-28.
 
 A command-line personal wiki that runs fully offline. Original notes in `vault/raw/` are turned into
 linked Obsidian notes by a local Gemma model. You can then **chat** with a personal assistant,
@@ -14,9 +14,9 @@ A study wiki for my job search: my notes from the Haas career workshops (Aug 202
 
 | Source (`vault/raw/`) | What it is | Permission to share |
 |---|---|---|
-| `Aug 2025 - Linkedin Training .pdf` (4 pp.) | My notes: LinkedIn exploration, positioning, job hunt, networking, research | TODO: confirm |
-| `Aug 2025 - Resume & Networking Training.pdf` (6 pp.) | My notes: resume sessions 1–3, job-search process, networking | TODO: confirm |
-| `Aug 2025 - Resume Only Workshop.pdf` (2 pp.) | My notes: resume workshops 1–2 (largely overlaps sessions 1–3 above) | TODO: confirm |
+| `Aug 2025 - Linkedin Training .pdf` (4 pp.) | My notes: LinkedIn exploration, positioning, job hunt, networking, research | My own notes; I approve publishing them |
+| `Aug 2025 - Resume & Networking Training.pdf` (6 pp.) | My notes: resume sessions 1–3, job-search process, networking | My own notes; I approve publishing them |
+| `Aug 2025 - Resume Only Workshop.pdf` (2 pp.) | My notes: resume workshops 1–2 (largely overlaps sessions 1–3 above) | My own notes; I approve publishing them |
 
 All three are Google Docs PDF exports with extractable text on every page (checked with `pdftotext`; no OCR needed, no warnings). Headings such as "Positioning" or "Session #2 - Resume Format" are detected so citations carry page and section.
 
@@ -34,20 +34,20 @@ note links back to its source(s) in its **Sources** section and in its `sources:
 | Memory | 8 GB unified memory (shared by CPU and GPU; no dedicated VRAM) |
 | Free disk | ~398 GB |
 | Python | 3.13.15 (standard library only) |
-| Runtime | Ollama TODO: version (`ollama --version`) |
-| Model | `gemma4:e2b-it-qat` (Gemma 4 E2B instruction-tuned, 4-bit quantization-aware training; 4.3 GB download per Ollama library). TODO: digest from `ollama show` |
+| Runtime | Ollama 0.34.4 (Homebrew), local server at `127.0.0.1:11434` |
+| Model | `gemma4:e2b-it-qat` (Gemma 4 E2B instruction-tuned, 4-bit quantization-aware training; 4.3 GB download per Ollama library). Ollama ID `07ea59a47401`; GGUF, 4.6B total parameters, `Q4_0`; layers: model 3.12 GB + vision projector 0.92 GB (not used here). Official source: `ollama pull gemma4:e2b-it-qat` |
 
 **Why this model.** The machine has 8 GB of unified memory, which the OS, Ollama, the context
 window (KV cache) and other apps all share. Gemma E2B at 4-bit needs about 2.9 GB to load (official estimate for the weights). In Ollama the default `gemma4:e2b` tag is a 7.2 GB
 download, too close to 8 GB, so I use the 4.3 GB QAT tag and a 4,096-token context. E4B (~4.5 GB) would be tight, and 26B A4B MoE (~14.4 GB) does not fit. MoE loads all
-26B weights, even though only about 4B are active per token. TODO: confirm with the measurements below.
+26B weights, even though only about 4B are active per token. The measurements below confirm it runs comfortably, with answers in 4–9 s.
 
 | Measurement | Value |
 |---|---|
-| Model memory reported by Ollama (`wiki status`) | TODO |
-| Ollama process RSS during an answer | TODO |
-| Ingest time (N sources) | TODO |
-| Ask response time (T1–T4) | TODO |
+| Model memory reported by Ollama (`/api/ps`, 4,096-token context) | **3.32 GiB** (3.57 GB), all on the Apple GPU, during the offline run. Earlier online runs the same day reported 1.53 GiB; I report the larger offline figure as the working footprint. |
+| Ollama process RSS during an answer | 1.73–1.87 GiB. GPU (Metal) buffers are not counted in RSS. The Mac was also using ~4 GB of swap from other apps. |
+| Ingest time | Full build of 3 sources (7 Gemma calls + 17 linking calls): 203 s online. Offline forced re-ingest of the 2-page PDF: 61 s. Unchanged re-ingest: 0.17 s (no model calls). |
+| Ask response time (offline) | T1 8.0 s, T2 4.5 s, T3 8.9 s, T4 4.4 s (~1.2–1.3k prompt tokens each). Chat turns: 7–14 s. |
 
 ### Install (once, while online)
 
@@ -118,14 +118,42 @@ Chat history is stored with citations expanded to file locations. It is never us
 
 ## Evidence
 
-TODO: fill in after the offline run.
+Required run: offline, Wi-Fi off, CLI restarted. Every saved record shows `"internet_reachable": false`.
+
+- **Full offline terminal log:** [`evidence/offline/offline-run-20260928-220454.txt`](evidence/offline/offline-run-20260928-220454.txt). It covers `status`, `--help`, ingesting a source, re-ingesting with no duplicates, search, the 4 ask tests and the mode checks. An earlier offline attempt, [`offline-run-20260928-215622.txt`](evidence/offline/offline-run-20260928-215622.txt), exposed the note-rename bug described below.
+- **Ask-mode evidence cards (offline):** [T1](evidence/ask/T1-20260928-220604.md), [T2](evidence/ask/T2-20260928-220609.md), [T3](evidence/ask/T3-20260928-220618.md), [T4](evidence/ask/T4-20260928-220622.md), and the [summary](evidence/ask/summary-20260928-220622.md).
+- **Mode checks (offline):** [`evidence/mode_checks/modecheck-20260928-220706.md`](evidence/mode_checks/modecheck-20260928-220706.md).
+- **Interactive chat (offline, 4 turns including a follow-up):** [`evidence/chat/chat-20260928-220921.md`](evidence/chat/chat-20260928-220921.md).
+- **Search (no model):** [`evidence/search/search-20260928-220556.md`](evidence/search/search-20260928-220556.md).
+- **Ingest logs:** [`evidence/ingest/`](evidence/ingest/). The source catalog is in [`data/source_catalog.json`](data/source_catalog.json).
+- TODO: screen recording of the offline run.
+- TODO: the 3 Obsidian screenshots (open note, `index.md`, graph view filtered to `path:wiki/` with attachments off).
+
+### Ask-mode results (offline)
+
+| Test | Question | Expected source retrieved | Behavior | Citations check out? |
+|---|---|---|---|---|
+| T1 | Three sentences of a LinkedIn cold outreach message | ✅ LinkedIn p.1 §Exploration as [S1] | Answered | ✅ All three sentences quoted from [S1] |
+| T2 | College grade point average on resume? (reworded) | ✅ found despite "GPA" vs "grade point average" | Answered | ✅ "Remove undergrad GPA … comparison" |
+| T3 | What a networking outreach message should include | ✅ both sources retrieved | Answered, combining 2 sources | ✅ LinkedIn cold-outreach guidelines, p.1 §Exploration [S2] + "short, under 100 words, 15–20 minutes" from Resume & Networking p.5 [S3] |
+| T4 | Who presented the LinkedIn training? | – (none exists) | `Insufficient evidence: …` | ✅ No citation, as required |
+
+### Chat and mode boundaries (offline)
+
+| Check | Harness decision | Result |
+|---|---|---|
+| "what can you help me with?" | no retrieval | Described its real capabilities and suggested notes from the wiki as starting points |
+| Draft an outreach message to an alum | retrieval ON (drafting request) | Draft based on the forwardable LinkedIn template, with citations |
+| "make it shorter" | no retrieval (follow-up) | Reworked the previous draft |
+| "What do my notes say about when to ask for a referral?" | retrieval ON (asks about notes) | "Never ask for a referral in the first call" [S1]; checked against the source passage |
+| Chat-only claim "study group meets in the Blue Lounge", then ask | ask ignores chat | `Insufficient evidence: …` |
 - Obsidian screenshots: an open note, `index.md`, and the graph view (filter `path:wiki/`, attachments off).
 - The ingest log in `evidence/ingest/`, including a re-ingest that shows no duplicates.
 - The four ask cards and a summary in `evidence/ask/`.
 - The mode checks in `evidence/mode_checks/`.
 - An offline recording or screenshots, with Wi-Fi off and the CLI restarted.
 
-## Changes made after observed failures (online dry run, 2026-09-28)
+## Changes made after observed failures (2026-09-28)
 
 Earlier results are kept in `evidence/first-ingest-backup/` and `evidence/online-dry-run/`.
 
@@ -136,8 +164,20 @@ Earlier results are kept in `evidence/first-ingest-backup/` and `evidence/online
 | T4 answered "sources do not state…" with a bogus `[S1]` citation, not "Insufficient evidence:" | A 2B model drifts from system-prompt formatting | Repeat the refusal rule after the question | T4 returns `Insufficient evidence: …`, no citation; T2 still answered |
 | Chat LinkedIn plan was generic and uncited | Drafting requests are mostly filler words, so term coverage < 50% | Drafting requests retrieve if the top passage matches ≥2 topic words | Plan built from notes with citations |
 | Chat said "I have noted that" after a chat-only claim | Persona didn't state it cannot save | Persona: say it will keep it in mind for this conversation only | Fixed |
+| First offline run: a forced re-ingest renamed "Resume Content Optimization" to "Resume Content Keywords" (no duplicate, but the title wasn't stable) | The similar-title check ignored the source's own previous notes during re-ingest | Also match against the source's previous titles | Second offline run: re-ingest removed 0 notes (was 1) |
+| Two ingests in the same second overwrote one log file | Timestamp to the second | Add microseconds to log names | Fixed |
 | T1's third sentence was a separate 22-word passage | Chunk boundary | Merge short tails into the previous passage from the same section | T1 passage complete |
 
 ## Reflection
 
-TODO: one real failure or limitation you observed, its cause, and one concrete improvement.
+**Limitation: chat follow-ups can drift away from the evidence.** When I asked chat to shorten a LinkedIn plan built from my notes, the short version said to "request specific endorsements". My notes say endorsements don't appear in LinkedIn Recruiter and that *recommendations* matter ([mode check](evidence/online-dry-run/mode_checks/)).
+
+- **Cause:** follow-ups deliberately skip retrieval, so the model rewrites its own earlier text without the source passages in front of it. Details can then be simplified until they are wrong.
+- **A related smaller issue** in the offline chat: the outreach draft closely reuses the LinkedIn "message to forward" template from [S5], but it cites only [S1]/[S4]. Its claim that the draft "aligns with" [S1] is loose, since [S1] says to ask for 15–20 minutes, not 10.
+
+**Improvement to try next:** when a follow-up rewrites an answer that used notes, re-attach that answer's passages and check citations again. Also add a short check that flags any fact in the rewrite that isn't in those passages.
+
+**Other limitations:**
+- Keyword (BM25) retrieval depends on shared words. T2 worked only because "resume" and "college" still matched. A local embedding model would handle rewording better.
+- The Resume Only PDF repeats Sessions 1–3 of the other PDF, so near-duplicate passages can take up several of the 5 retrieval slots.
+

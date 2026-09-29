@@ -252,7 +252,7 @@ def ingest(cfg: Config, llm: OllamaClient | None, only: Path | None = None, forc
             catalog.pop(sid, None)
             continue
         store.remove_source(sid)
-        made = sorted({store.add_topic(sid, t, cfg.model) for t in topics})
+        made = sorted({store.add_topic(sid, t, cfg.model, previous=tuple(previous)) for t in topics})
         entry.update(notes=made, ingested=datetime.now().isoformat(timespec="seconds"), model=cfg.model)
         catalog[sid] = entry
         run["sources"].append({"source": cfg.rel(f), "status": "generated", "notes": made,
@@ -283,7 +283,7 @@ def ingest(cfg: Config, llm: OllamaClient | None, only: Path | None = None, forc
     run.update(render=report, passages=len(all_passages), seconds=round(time.perf_counter() - t0, 2))
     if llm is not None and need_model:
         run["memory"] = llm.memory_snapshot()
-    out = cfg.evidence_dir / "ingest" / f"ingest-{datetime.now():%Y%m%d-%H%M%S}.json"
+    out = cfg.evidence_dir / "ingest" / f"ingest-{datetime.now():%Y%m%d-%H%M%S-%f}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(run, indent=2), encoding="utf-8")
     run["log_file"] = cfg.rel(out)

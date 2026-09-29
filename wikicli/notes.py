@@ -90,11 +90,12 @@ class NoteStore:
         return {n["title"]: next(iter(sorted(n["contributions"].items())))[1]["summary"]
                 for n in self.notes.values() if n["contributions"]}
 
-    def find_similar(self, title: str) -> dict | None:
+    def find_similar(self, title: str, also: tuple = ()) -> dict | None:
         """An existing note (with sources) on the same subject: exact title, or titles sharing
         at least two content words and two-thirds of the shorter title's words
         ('Resume Bullet Components' ~ 'Resume Bullet Structure Elements')."""
-        live = [n for n in self.notes.values() if n["contributions"]]
+        also_keys = {key(x) for x in also}   # e.g. this source's previous titles during a re-ingest
+        live = [n for n in self.notes.values() if n["contributions"] or key(n["title"]) in also_keys]
         for n in live:
             if key(n["title"]) == key(title):
                 return n
@@ -108,9 +109,9 @@ class NoteStore:
                 best, best_score = n, score
         return best
 
-    def add_topic(self, sid: str, topic: dict, model: str) -> str:
+    def add_topic(self, sid: str, topic: dict, model: str, previous: tuple = ()) -> str:
         title = topic["title"]
-        note = self.find_similar(title) or self.notes.get(key(title))
+        note = self.find_similar(title, also=previous) or self.notes.get(key(title))
         if note is None:
             note = {"title": title, "folder": topic["folder"], "contributions": {}, "rendered_sha": None}
             self.notes[key(title)] = note

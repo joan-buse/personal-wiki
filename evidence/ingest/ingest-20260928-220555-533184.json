@@ -1,0 +1,97 @@
+{
+  "started": "2026-09-28T22:04:54",
+  "model": "gemma4:e2b-it-qat",
+  "internet_reachable": false,
+  "sources": [
+    {
+      "source": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+      "status": "generated",
+      "notes": [
+        "Resume Application Tips",
+        "Resume Content Keywords",
+        "Resume Format Guidelines",
+        "Writing Effective Resume Bullets"
+      ],
+      "segments": 1,
+      "chars_sent": 4953,
+      "calls": [
+        {
+          "seconds": 38.0,
+          "prompt_tokens": 1946,
+          "output_tokens": 640,
+          "attempts": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "link_calls": [
+    {
+      "note": "Resume Application Tips",
+      "seconds": 6.89,
+      "links": [
+        "Resume Format Guidelines",
+        "Writing Effective Resume Bullets",
+        "Resume Content Keywords"
+      ]
+    },
+    {
+      "note": "Resume Content Keywords",
+      "seconds": 3.36,
+      "links": [
+        "Resume Reading Techniques"
+      ]
+    },
+    {
+      "note": "Resume Format Guidelines",
+      "seconds": 6.82,
+      "links": [
+        "Resume Content Keywords",
+        "Writing Effective Resume Bullets",
+        "Resume Reading Techniques"
+      ]
+    },
+    {
+      "note": "Writing Effective Resume Bullets",
+      "seconds": 5.73,
+      "links": [
+        "Resume Content Keywords",
+        "Resume Reading Techniques",
+        "Resume Format Guidelines"
+      ]
+    }
+  ],
+  "render": {
+    "written": [
+      "Resume Format Guidelines",
+      "Writing Effective Resume Bullets",
+      "Resume Application Tips",
+      "Resume Content Keywords"
+    ],
+    "unchanged": [
+      "Successful Job Hunt Components",
+      "LinkedIn Exploration Tools",
+      "LinkedIn Positioning Strategy",
+      "LinkedIn Job Hunt Tactics",
+      "Interview Preparation Strategies",
+      "LinkedIn Networking Techniques",
+      "Salary Negotiation Data Points",
+      "Resume Reading Techniques",
+      "Process to Advance Career",
+      "Networking for Success Process",
+      "Networking Outreach Principles",
+      "Developing Company Focus List",
+      "Networking Follow Up Strategy"
+    ],
+    "kept_manual_edits": [],
+    "removed": []
+  },
+  "passages": 104,
+  "seconds": 60.98,
+  "memory": {
+    "model_size_bytes": 3568440440,
+    "model_size_vram_bytes": 3568440440,
+    "context_length": 4096,
+    "ollama_rss_bytes": 1862467584
+  }
+}

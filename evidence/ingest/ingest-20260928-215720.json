@@ -1,0 +1,46 @@
+{
+  "started": "2026-09-28T21:57:20",
+  "model": "gemma4:e2b-it-qat",
+  "internet_reachable": false,
+  "sources": [
+    {
+      "source": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "status": "unchanged"
+    },
+    {
+      "source": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+      "status": "unchanged"
+    },
+    {
+      "source": "vault/raw/Aug 2025 - Resume Only Workshop.pdf",
+      "status": "unchanged"
+    }
+  ],
+  "errors": [],
+  "render": {
+    "written": [],
+    "unchanged": [
+      "Successful Job Hunt Components",
+      "LinkedIn Exploration Tools",
+      "LinkedIn Positioning Strategy",
+      "LinkedIn Job Hunt Tactics",
+      "Interview Preparation Strategies",
+      "LinkedIn Networking Techniques",
+      "Salary Negotiation Data Points",
+      "Resume Reading Techniques",
+      "Resume Format Guidelines",
+      "Writing Effective Resume Bullets",
+      "Process to Advance Career",
+      "Networking for Success Process",
+      "Networking Outreach Principles",
+      "Developing Company Focus List",
+      "Networking Follow Up Strategy",
+      "Resume Application Tips",
+      "Resume Content Keywords"
+    ],
+    "kept_manual_edits": [],
+    "removed": []
+  },
+  "passages": 104,
+  "seconds": 0.13
+}

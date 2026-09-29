@@ -1,0 +1,104 @@
+{
+  "kind": "search",
+  "time": "2026-09-28T21:57:21",
+  "mode": "local",
+  "model": "gemma4:e2b-it-qat",
+  "runtime": "ollama",
+  "host": "http://127.0.0.1:11434",
+  "internet_reachable": false,
+  "device": {
+    "os": "Darwin 26.6.2",
+    "machine": "arm64",
+    "python": "3.13.15",
+    "chip": "Apple M1",
+    "ram_gb": 8.0
+  },
+  "query": "cold outreach message",
+  "scope": "raw",
+  "results": [
+    {
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Exploration (lines 14-28)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Exploration",
+      "page": 1,
+      "lines": [
+        14,
+        28
+      ],
+      "score": 6.964,
+      "term_coverage": 1.0,
+      "matched_terms": [
+        "cold",
+        "outreach",
+        "message"
+      ],
+      "text": "●​ Alumni tool\n         ○​ Navigating: Search school name in search bar > Click on school > Click on\n            “Alumni” tab on home page\n         ○​ Filtering: Search alumni by desired function (e.g. “product manager”, be sure to\n            use quotes). You can continue to filter by company\n         ○​ Connecting: If you find someone with whom you want to connect and message,\n            without using premium, select “Connect” button > Add personalized message\n  ●​ Linkedin cold outreach message guidelines (Commonality, Curiosity, and Call-to-Action)\n         ○​ Sentence #1: Prove you’re not a stranger, state what you have in common: “I’m a\n            current/alumni of (school), and I was thrilled to come across your profile.”\n         ○​ Sentence #2: State what you are looking for–learning, a referral, a job, etc: “I’m\n            torn between a PM and consulting career path and would love to learn from your\n            expertise.”\n○​ Sentence #3: Take all the friction out of the process: “Any chance you have 10\n            minutes for a quick Zoom chat?”"
+    },
+    {
+      "location": "vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 37-44)",
+      "path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+      "section": "Networking for Success",
+      "page": 5,
+      "lines": [
+        37,
+        44
+      ],
+      "score": 5.604,
+      "term_coverage": 0.67,
+      "matched_terms": [
+        "cold",
+        "outreach"
+      ],
+      "text": "cold-calling dream companies. It requires more desk work and more guts\n  ●​ If you are apprehensive about not being “ready” before an exploratory conversation, be\n     upfront about this and impress them with your preparation and questions. Don’t let the\n     feeling of “not be ready” prevent you from having a call\n  ●​ Outreach principles\n          ○​ 1) Short (<100 words)\n                  ■​ Only ask for 15-20 minutes\n          ○​ 2) No mention of you looking for or asking for jobs/internships"
+    },
+    {
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 40-44)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Network",
+      "page": 3,
+      "lines": [
+        40,
+        44
+      ],
+      "score": 5.396,
+      "term_coverage": 0.67,
+      "matched_terms": [
+        "outreach",
+        "message"
+      ],
+      "text": "○​ Example outreach message “I came across your profile and, as a fellow [College]\n            grad. I’d be thrilled to learn about your experience with [Role.] Any chance you\n            have 10 minutes to chat next week? I'd love to get your advice!\n  ●​ Networking question ideas\n        ○​ It's great to connect with you via [Name] - thanks for making the time!"
+    },
+    {
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 7-17)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Network",
+      "page": 3,
+      "lines": [
+        7,
+        17
+      ],
+      "score": 3.231,
+      "term_coverage": 0.33,
+      "matched_terms": [
+        "message"
+      ],
+      "text": "●​ Second degree connections\n        ○​ Search “[Name of company] [Role]” in search bar and look for those that have a\n           shared connection (2nd degree connection) > Select 2nd degree connection >\n           Click name of mutual connection > Send message to mutual connectino\n        ○​ For example, if you want to reach out to John Doe on Google’s Product\n           Marketing team, and you have a mutual connection Jane, reach out to Jane via\n           messaging with the following\n               ■​ “Hi Jane, Would you mind introducing me to John? I’m thinking about\n                  applying for jobs in his field but want to make sure it is a good fit. If you’re\n                  willing to do so, I’ve included a message below that you can just forward\n                  over"
+    },
+    {
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.4 §Research (lines 22-30)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Research",
+      "page": 4,
+      "lines": [
+        22,
+        30
+      ],
+      "score": 2.508,
+      "term_coverage": 0.33,
+      "matched_terms": [
+        "message"
+      ],
+      "text": "●​ Most unfiltered feedback will come from people who used to work at the company\n         ○​ All People > Advanced search > Past company [Name of company]\n         ○​ Example message: “Just saw that you used to work at [Company] and was quite\n             intrigued. Especially since I'm considering an offer there right now. Might you\n             have 15 minutes to chat this week about your experience?\"\n         ○​ Ask them these two essential questions:\n                  ■​ Why did you leave?\n                  ■​ Would you ever work there again?\n  ●​ The most useful data point in salary negotiations is how much the competition is paying"
+    }
+  ]
+}

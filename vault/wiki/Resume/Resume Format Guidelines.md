@@ -15,7 +15,7 @@ updated: 2026-09-28
 
 The recommended resume formats depend on the intended next move, focusing on readability for recruiters who spend only 7-8 seconds per resume.
 
-From [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]]: Resume formatting should prioritize readability because recruiters spend only 7-8 seconds per resume, acting as a marketing tool.
+From [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]]: Formatting should prioritize readability because recruiters spend only 7-8 seconds per resume. Different formats are suggested based on career trajectory.
 
 ## Details
 
@@ -25,14 +25,16 @@ From [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]]
 - Remove undergrad GPA because it opens you up to comparison *(source: [[raw/Aug 2025 - Resume & Networking Training.pdf|Aug 2025 - Resume & Networking Training]])*
 - Remove undergrad awards unless you have space *(source: [[raw/Aug 2025 - Resume & Networking Training.pdf|Aug 2025 - Resume & Networking Training]])*
 - Make sure you have an additional humorous section to entice the reader to ask about it *(source: [[raw/Aug 2025 - Resume & Networking Training.pdf|Aug 2025 - Resume & Networking Training]])*
-- Goal is readability for recruiters who spend 7-8 seconds per resume *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
+- Goal is readability because recruiters spend 7-8 seconds per resume *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
 - Chronological format is for classic/traditional industries or single pivots *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
 - Hybrid format uses job titles followed by function/skill bullets *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
-- Functional format is recommended for big pivots, unfamiliar industries, or transferable skills *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
+- Functional format is most rated for big pivots, unfamiliar industries, or transferable skills *(source: [[raw/Aug 2025 - Resume Only Workshop.pdf|Aug 2025 - Resume Only Workshop]])*
 
 ## Related notes
 
-- [[Resume Content Optimization]] — Both focus on tailoring resume language to match job descriptions.
+- [[Resume Content Keywords]] — Formatting advice is closely tied to using keywords from job descriptions in the resume.
+- [[Writing Effective Resume Bullets]] — Resume bullets should include at least three elements: What, How, and Impact, and should be explicit rather than mysterious.
+- [[Resume Reading Techniques]] — This session advises looking for repeated words in job descriptions and incorporating them into resume bullets to match the role's language.
 
 ## Sources
 

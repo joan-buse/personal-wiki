@@ -1,0 +1,254 @@
+{
+  "kind": "chat",
+  "time": "2026-09-28T22:07:19",
+  "mode": "local",
+  "model": "gemma4:e2b-it-qat",
+  "runtime": "ollama",
+  "host": "http://127.0.0.1:11434",
+  "internet_reachable": false,
+  "device": {
+    "os": "Darwin 26.6.2",
+    "machine": "arm64",
+    "python": "3.13.15",
+    "chip": "Apple M1",
+    "ram_gb": 8.0
+  },
+  "runtime_version": "0.34.4",
+  "turns": [
+    {
+      "user": "what can you help me with?",
+      "retrieved": false,
+      "routing_reason": "question about the assistant itself",
+      "passages": [],
+      "reply": "I can help you with brainstorming, drafting, planning, and refining content for your wiki.\n\nHere are some specific ways I can assist:\n\n*   **Brainstorming:** We can develop new strategies for your job search, networking, or resume.\n*   **Drafting:** I can help you write sections for your resume, LinkedIn profiles, or outreach emails.\n*   **Planning:** If you have a big goal, like \"How to advance my career,\" we can break it down into actionable steps.\n*   **Refining:** You can give me existing text, and I can help you make it shorter, clearer, or more impactful.\n*   **Following Up:** We can continue a specific thought or draft you are working on.\n\nWhere should we start? Do you want to work on a specific topic from your titles, like \"Interview Preparation Strategies\" or \"Networking Outreach Principles\"?",
+      "citation_check": {},
+      "response_seconds": 11.18
+    },
+    {
+      "user": "Draft a short outreach message to an alum who works in product marketing",
+      "retrieved": true,
+      "routing_reason": "drafting request on a topic in the notes (short, outreach, work)",
+      "passages": [
+        {
+          "label": "S1",
+          "location": "vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 37-44)",
+          "path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+          "section": "Networking for Success",
+          "page": 5,
+          "lines": [
+            37,
+            44
+          ],
+          "score": 8.496,
+          "term_coverage": 0.38,
+          "matched_terms": [
+            "short",
+            "outreach",
+            "work"
+          ],
+          "text": "cold-calling dream companies. It requires more desk work and more guts\n  ●​ If you are apprehensive about not being “ready” before an exploratory conversation, be\n     upfront about this and impress them with your preparation and questions. Don’t let the\n     feeling of “not be ready” prevent you from having a call\n  ●​ Outreach principles\n          ○​ 1) Short (<100 words)\n                  ■​ Only ask for 15-20 minutes\n          ○​ 2) No mention of you looking for or asking for jobs/internships"
+        },
+        {
+          "label": "S2",
+          "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 7-17)",
+          "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+          "section": "Network",
+          "page": 3,
+          "lines": [
+            7,
+            17
+          ],
+          "score": 8.244,
+          "term_coverage": 0.38,
+          "matched_terms": [
+            "message",
+            "product",
+            "marketing"
+          ],
+          "text": "●​ Second degree connections\n        ○​ Search “[Name of company] [Role]” in search bar and look for those that have a\n           shared connection (2nd degree connection) > Select 2nd degree connection >\n           Click name of mutual connection > Send message to mutual connectino\n        ○​ For example, if you want to reach out to John Doe on Google’s Product\n           Marketing team, and you have a mutual connection Jane, reach out to Jane via\n           messaging with the following\n               ■​ “Hi Jane, Would you mind introducing me to John? I’m thinking about\n                  applying for jobs in his field but want to make sure it is a good fit. If you’re\n                  willing to do so, I’ve included a message below that you can just forward\n                  over"
+        },
+        {
+          "label": "S3",
+          "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Positioning (lines 32-40)",
+          "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+          "section": "Positioning",
+          "page": 1,
+          "lines": [
+            32,
+            40
+          ],
+          "score": 8.097,
+          "term_coverage": 0.25,
+          "matched_terms": [
+            "product",
+            "marketing"
+          ],
+          "text": "●​ Linkedin recruiter gives people access to half a billion professionals globally. The tool is\n     most geared towards 1) number of instances of key words (e.g. “brand marketing,”\n     “product marketing,” etc.) 2) closeness of connection, and 3) photo\n  ●​ Most important key word is the job title itself; most important placement: 1) Headline 2)\n     Summary/About 3) Experience\n         ○​ The algorithm places a high value on words in these three categories because\n            they are the sections with the smallest character limit, placing greater value on\n            the words within them\n         ○​ Headline: “Aspiring Product Manager” or “Seeking Product Manager Roles”"
+        },
+        {
+          "label": "S4",
+          "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Exploration (lines 14-28)",
+          "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+          "section": "Exploration",
+          "page": 1,
+          "lines": [
+            14,
+            28
+          ],
+          "score": 6.84,
+          "term_coverage": 0.38,
+          "matched_terms": [
+            "outreach",
+            "message",
+            "product"
+          ],
+          "text": "●​ Alumni tool\n         ○​ Navigating: Search school name in search bar > Click on school > Click on\n            “Alumni” tab on home page\n         ○​ Filtering: Search alumni by desired function (e.g. “product manager”, be sure to\n            use quotes). You can continue to filter by company\n         ○​ Connecting: If you find someone with whom you want to connect and message,\n            without using premium, select “Connect” button > Add personalized message\n  ●​ Linkedin cold outreach message guidelines (Commonality, Curiosity, and Call-to-Action)\n         ○​ Sentence #1: Prove you’re not a stranger, state what you have in common: “I’m a\n            current/alumni of (school), and I was thrilled to come across your profile.”\n         ○​ Sentence #2: State what you are looking for–learning, a referral, a job, etc: “I’m\n            torn between a PM and consulting career path and would love to learn from your\n            expertise.”\n○​ Sentence #3: Take all the friction out of the process: “Any chance you have 10\n            minutes for a quick Zoom chat?”"
+        },
+        {
+          "label": "S5",
+          "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 19-39)",
+          "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+          "section": "Network",
+          "page": 3,
+          "lines": [
+            19,
+            39
+          ],
+          "score": 6.573,
+          "term_coverage": 0.38,
+          "matched_terms": [
+            "message",
+            "product",
+            "marketing"
+          ],
+          "text": "<<<Message to Forward>>>\n                     Hi John,\n                     I recently came across your profile on LinkedIn and was so fascinated by\n                     all the awesome things you’ve done. In particular, I’d love to learn about\n                     your experience with product marketing, as I’m considering that field\n                     myself.\n                     That said, I know you must be incredibly busy right now. But if you have\n                     even 10 minutes to chat in the next few weeks, just let me know as I’d\n                     love to learn from your expertise!\n                     Thanks for considering!\n  ●​ Alumni connections\n        ○​ Search “[Name of company] [Role]” in search bar > All filters tab in upper\n            righthand corner > Click “Add School” under the school section and type in your\n            college > Click show results > Select a person to whom you can connect and\n            “Add note” to connection request​\n                ■​ If you reach your personalized note limits, here is workaround"
+        }
+      ],
+      "reply": "Here is a draft outreach message for an alum in product marketing.\n\nThis draft incorporates principles from your notes regarding brevity and approach:\n\n**Draft Message:**\n\nHi [Alum's Name],\n\nI recently came across your profile on LinkedIn and was so fascinated by all the awesome things you’ve done. In particular, I’d love to learn about your experience with product marketing, as I’m considering that field myself.\n\nThat said, I know you must be incredibly busy right now. But if you have even 10 minutes for a quick Zoom chat in the next few weeks, just let me know as I’d love to learn from your expertise!\n\nThanks for considering!\n\n---\n\n**Next Steps:**\n\n1.  Replace `[Alum's Name]` with their actual name.\n2.  Review the message. It is under 100 words and only asks for 10 minutes, which aligns with the outreach principles noted in [S1] and [S4].\n\nDoes this look good, or would you like to adjust the tone or focus?",
+      "citation_check": {
+        "cited": [
+          1,
+          4
+        ],
+        "invalid": [],
+        "insufficient": false,
+        "status": "ok"
+      },
+      "response_seconds": 13.7
+    },
+    {
+      "user": "Make it shorter",
+      "retrieved": false,
+      "routing_reason": "follow-up on the conversation",
+      "passages": [],
+      "reply": "Understood. We need to strip it down to the essentials.\n\nHere is a much shorter, punchier version:\n\n**Shortened Draft:**\n\nHi [Alum's Name],\n\nLoved your background in product marketing. I'm exploring that path and would love 10 minutes of your time to ask a few quick questions about your experience.\n\nNo pressure at all. Let me know if you have any availability.\n\nBest,\n[Your Name]\n\n---\n\n**Next Steps:**\n\nThis version is direct and respects their time. How does this length feel? We can refine the specific questions if you want to guide the conversation further.",
+      "citation_check": {},
+      "response_seconds": 7.2
+    },
+    {
+      "user": "What do my notes say about when to ask for a referral?",
+      "retrieved": true,
+      "routing_reason": "user asked about their notes",
+      "passages": [
+        {
+          "label": "S1",
+          "location": "vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 7-22)",
+          "path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+          "section": "Networking for Success",
+          "page": 5,
+          "lines": [
+            7,
+            22
+          ],
+          "score": 7.195,
+          "term_coverage": 0.67,
+          "matched_terms": [
+            "ask",
+            "referral"
+          ],
+          "text": "●​ Recommended read: The Two Hour Job Search\n  ●​ Process for networking:\n          ○​ 1) Generate a hypothesis to explore–industry, function, location, etc.\n          ○​ 2) Generate learning targets–40-50 target companies and look at their earnings,\n             strategy, etc.\n          ○​ 3) Begin your networking list–people from undergrad and grad who work there\n          ○​ 4) Plan first outreach\n  ●​ Benefits of networking–refine target industry and roles, learn the vocabulary, identify\n     hidden opportunities (60% of jobs are not posted,) practice and refine your personal\n     pitch, and build relationships\n          ○​ The further you are in your career, or after your MBA graduation date, the more\n             likely your next job is going to come from your network\n  ●​ Referrals\n          ○​ Referrals come after you build the trusting relationship; start with a networking\n             call, keep in touch with them, and then ask for the referral; never ask for a referral\n             in the first call"
+        },
+        {
+          "label": "S2",
+          "location": "vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 23-36)",
+          "path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+          "section": "Networking for Success",
+          "page": 5,
+          "lines": [
+            23,
+            36
+          ],
+          "score": 4.303,
+          "term_coverage": 0.67,
+          "matched_terms": [
+            "ask",
+            "referral"
+          ],
+          "text": "○​ Getting a referral from someone in another city/office can be valuable, but its\n             depends on the company, city, culture, etc\n          ○​ Wait until after the first conversation to ask who else to whom else to talk; the first\n             networking call is all about the other person–your curiosity in what they do or how\n             they do it\n  ●​ Exploratory conversations\n          ○​ Start networking only but only after desk research about the person, company,\n             etc.\n  ●​ Developing company and industry focus list\n          ○​ If you say “tech,” what type of tech? If you say “fintech” what type of fintech?\n             Start with dream employers\n          ○​ If you aren't sure where to start for your target list of companies, look at\n             conferences of interest and make a list of companies attending and sponsors\n          ○​ The CMG (Haas Career Management Group) has seen success with student"
+        },
+        {
+          "label": "S3",
+          "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Linkedin Training (lines 2-10)",
+          "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+          "section": "Linkedin Training",
+          "page": 1,
+          "lines": [
+            2,
+            10
+          ],
+          "score": 4.048,
+          "term_coverage": 0.33,
+          "matched_terms": [
+            "referral"
+          ],
+          "text": "●​ No resume alone is going to get you a job. A successful job hunt is equal parts of five\n     things–exploration, research, positioning, networking, and job hunt\n         ○​ You have to explore the industry/role you specifically want, research the\n            company you want, position yourself accordingly, network to get an inside\n            referral, and then submit your resume.\n                ■​ Recruiters love referrals because data shows that referred candidates get\n                    hired faster and stay longer\n  ●​ The average recruiter is juggling 30-40 open roles and the average job listing attracts\n     250 resumes. The best recruiters used Linkedin, and they search by job title"
+        },
+        {
+          "label": "S4",
+          "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Exploration (lines 14-28)",
+          "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+          "section": "Exploration",
+          "page": 1,
+          "lines": [
+            14,
+            28
+          ],
+          "score": 2.212,
+          "term_coverage": 0.33,
+          "matched_terms": [
+            "referral"
+          ],
+          "text": "●​ Alumni tool\n         ○​ Navigating: Search school name in search bar > Click on school > Click on\n            “Alumni” tab on home page\n         ○​ Filtering: Search alumni by desired function (e.g. “product manager”, be sure to\n            use quotes). You can continue to filter by company\n         ○​ Connecting: If you find someone with whom you want to connect and message,\n            without using premium, select “Connect” button > Add personalized message\n  ●​ Linkedin cold outreach message guidelines (Commonality, Curiosity, and Call-to-Action)\n         ○​ Sentence #1: Prove you’re not a stranger, state what you have in common: “I’m a\n            current/alumni of (school), and I was thrilled to come across your profile.”\n         ○​ Sentence #2: State what you are looking for–learning, a referral, a job, etc: “I’m\n            torn between a PM and consulting career path and would love to learn from your\n            expertise.”\n○​ Sentence #3: Take all the friction out of the process: “Any chance you have 10\n            minutes for a quick Zoom chat?”"
+        },
+        {
+          "label": "S5",
+          "location": "vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 37-44)",
+          "path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+          "section": "Networking for Success",
+          "page": 5,
+          "lines": [
+            37,
+            44
+          ],
+          "score": 2.162,
+          "term_coverage": 0.33,
+          "matched_terms": [
+            "ask"
+          ],
+          "text": "cold-calling dream companies. It requires more desk work and more guts\n  ●​ If you are apprehensive about not being “ready” before an exploratory conversation, be\n     upfront about this and impress them with your preparation and questions. Don’t let the\n     feeling of “not be ready” prevent you from having a call\n  ●​ Outreach principles\n          ○​ 1) Short (<100 words)\n                  ■​ Only ask for 15-20 minutes\n          ○​ 2) No mention of you looking for or asking for jobs/internships"
+        }
+      ],
+      "reply": "Your notes are clear on the sequence for asking for a referral.\n\nHere is what the notes say:\n\n1.  **Build the Relationship First:** Referrals come *after* you have built a trusting relationship [S1].\n2.  **Start with Networking Calls:** Begin by starting with a networking call and keeping in touch with the person *before* asking for a referral [S1].\n3.  **Timing:** Never ask for a referral in the first call [S1].\n4.  **When to Ask:** Wait until *after* the first conversation to ask who else you should talk to (who is to whom) [S2].\n\nIn short: **Connect, build trust, have a conversation, *then* ask for the referral.**\n\nDoes this clarify the process for you? We can use this framework to plan out your outreach steps.",
+      "citation_check": {
+        "cited": [
+          1,
+          2
+        ],
+        "invalid": [],
+        "insufficient": false,
+        "status": "ok"
+      },
+      "response_seconds": 12.76
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "kind": "ask",
+  "time": "2026-09-28T22:05:56",
+  "mode": "local",
+  "model": "gemma4:e2b-it-qat",
+  "runtime": "ollama",
+  "host": "http://127.0.0.1:11434",
+  "internet_reachable": false,
+  "device": {
+    "os": "Darwin 26.6.2",
+    "machine": "arm64",
+    "python": "3.13.15",
+    "chip": "Apple M1",
+    "ram_gb": 8.0
+  },
+  "runtime_version": "0.34.4",
+  "question": "What should a networking outreach message include?",
+  "model_called": true,
+  "retrieved": [
+    {
+      "label": "S1",
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 40-44)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Network",
+      "page": 3,
+      "lines": [
+        40,
+        44
+      ],
+      "score": 6.423,
+      "term_coverage": 0.75,
+      "matched_terms": [
+        "networking",
+        "outreach",
+        "message"
+      ],
+      "text": "○​ Example outreach message “I came across your profile and, as a fellow [College]\n            grad. I’d be thrilled to learn about your experience with [Role.] Any chance you\n            have 10 minutes to chat next week? I'd love to get your advice!\n  ●​ Networking question ideas\n        ○​ It's great to connect with you via [Name] - thanks for making the time!"
+    },
+    {
+      "label": "S2",
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.1 §Exploration (lines 14-28)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Exploration",
+      "page": 1,
+      "lines": [
+        14,
+        28
+      ],
+      "score": 4.886,
+      "term_coverage": 0.5,
+      "matched_terms": [
+        "outreach",
+        "message"
+      ],
+      "text": "●​ Alumni tool\n         ○​ Navigating: Search school name in search bar > Click on school > Click on\n            “Alumni” tab on home page\n         ○​ Filtering: Search alumni by desired function (e.g. “product manager”, be sure to\n            use quotes). You can continue to filter by company\n         ○​ Connecting: If you find someone with whom you want to connect and message,\n            without using premium, select “Connect” button > Add personalized message\n  ●​ Linkedin cold outreach message guidelines (Commonality, Curiosity, and Call-to-Action)\n         ○​ Sentence #1: Prove you’re not a stranger, state what you have in common: “I’m a\n            current/alumni of (school), and I was thrilled to come across your profile.”\n         ○​ Sentence #2: State what you are looking for–learning, a referral, a job, etc: “I’m\n            torn between a PM and consulting career path and would love to learn from your\n            expertise.”\n○​ Sentence #3: Take all the friction out of the process: “Any chance you have 10\n            minutes for a quick Zoom chat?”"
+    },
+    {
+      "label": "S3",
+      "location": "vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 37-44)",
+      "path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+      "section": "Networking for Success",
+      "page": 5,
+      "lines": [
+        37,
+        44
+      ],
+      "score": 3.365,
+      "term_coverage": 0.5,
+      "matched_terms": [
+        "networking",
+        "outreach"
+      ],
+      "text": "cold-calling dream companies. It requires more desk work and more guts\n  ●​ If you are apprehensive about not being “ready” before an exploratory conversation, be\n     upfront about this and impress them with your preparation and questions. Don’t let the\n     feeling of “not be ready” prevent you from having a call\n  ●​ Outreach principles\n          ○​ 1) Short (<100 words)\n                  ■​ Only ask for 15-20 minutes\n          ○​ 2) No mention of you looking for or asking for jobs/internships"
+    },
+    {
+      "label": "S4",
+      "location": "vault/raw/Aug 2025 - Linkedin Training .pdf p.3 §Network (lines 7-17)",
+      "path": "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "section": "Network",
+      "page": 3,
+      "lines": [
+        7,
+        17
+      ],
+      "score": 3.249,
+      "term_coverage": 0.25,
+      "matched_terms": [
+        "message"
+      ],
+      "text": "●​ Second degree connections\n        ○​ Search “[Name of company] [Role]” in search bar and look for those that have a\n           shared connection (2nd degree connection) > Select 2nd degree connection >\n           Click name of mutual connection > Send message to mutual connectino\n        ○​ For example, if you want to reach out to John Doe on Google’s Product\n           Marketing team, and you have a mutual connection Jane, reach out to Jane via\n           messaging with the following\n               ■​ “Hi Jane, Would you mind introducing me to John? I’m thinking about\n                  applying for jobs in his field but want to make sure it is a good fit. If you’re\n                  willing to do so, I’ve included a message below that you can just forward\n                  over"
+    },
+    {
+      "label": "S5",
+      "location": "vault/raw/Aug 2025 - Resume & Networking Training.pdf p.5 §Networking for Success (lines 7-22)",
+      "path": "vault/raw/Aug 2025 - Resume & Networking Training.pdf",
+      "section": "Networking for Success",
+      "page": 5,
+      "lines": [
+        7,
+        22
+      ],
+      "score": 3.187,
+      "term_coverage": 0.5,
+      "matched_terms": [
+        "networking",
+        "outreach"
+      ],
+      "text": "●​ Recommended read: The Two Hour Job Search\n  ●​ Process for networking:\n          ○​ 1) Generate a hypothesis to explore–industry, function, location, etc.\n          ○​ 2) Generate learning targets–40-50 target companies and look at their earnings,\n             strategy, etc.\n          ○​ 3) Begin your networking list–people from undergrad and grad who work there\n          ○​ 4) Plan first outreach\n  ●​ Benefits of networking–refine target industry and roles, learn the vocabulary, identify\n     hidden opportunities (60% of jobs are not posted,) practice and refine your personal\n     pitch, and build relationships\n          ○​ The further you are in your career, or after your MBA graduation date, the more\n             likely your next job is going to come from your network\n  ●​ Referrals\n          ○​ Referrals come after you build the trusting relationship; start with a networking\n             call, keep in touch with them, and then ask for the referral; never ask for a referral\n             in the first call"
+    }
+  ],
+  "answer": "A networking outreach message should include elements such as proving you are not a stranger by stating what you have in common, such as being a current or alumni of a school [S2]. You should state what you are looking for, like learning from someone's expertise, a referral, or a job [S2]. Finally, you should take all the friction out of the process by asking if they have time for a quick chat, such as a 10-minute Zoom call [S2]. Outreach messages should also be short, under 100 words, and only ask for 15-20 minutes [S3].",
+  "citation_check": {
+    "cited": [
+      2,
+      3
+    ],
+    "invalid": [],
+    "insufficient": false,
+    "status": "ok"
+  },
+  "response_seconds": 8.85,
+  "prompt_tokens": 1333,
+  "output_tokens": 131,
+  "memory": {
+    "model_size_bytes": 3568440440,
+    "model_size_vram_bytes": 3568440440,
+    "context_length": 4096,
+    "ollama_rss_bytes": 1873494016
+  },
+  "test": {
+    "id": "T3",
+    "question": "What should a networking outreach message include?",
+    "expect": "answer",
+    "expected_sources": [
+      "vault/raw/Aug 2025 - Linkedin Training .pdf",
+      "vault/raw/Aug 2025 - Resume & Networking Training.pdf"
+    ],
+    "expected_passage": "LinkedIn p.1 §Exploration (commonality, curiosity, call-to-action) + Resume & Networking p.5-6 §Networking for Success outreach principles (short <100 words, ask for 15-20 minutes, no mention of looking for jobs, state your connection up front, generalize interest, it's about them)."
+  },
+  "auto_checks": {
+    "expected_source_retrieved": true,
+    "expected_behavior": "answer",
+    "behavior_matches": true
+  }
+}

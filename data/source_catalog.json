@@ -41,11 +41,11 @@
     "sha256": "5df29d72297ace4b54818e600423739cbde232e407cbc67270049411aff4ed0b",
     "notes": [
       "Resume Application Tips",
-      "Resume Content Optimization",
+      "Resume Content Keywords",
       "Resume Format Guidelines",
       "Writing Effective Resume Bullets"
     ],
-    "ingested": "2026-09-28T18:36:28",
+    "ingested": "2026-09-28T22:05:32",
     "model": "gemma4:e2b-it-qat"
   }
 }
