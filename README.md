@@ -136,7 +136,7 @@ Required run: offline, Wi-Fi off, CLI restarted. Every saved record shows `"inte
 - **Interactive chat (offline, 4 turns including a follow-up):** [`evidence/chat/chat-20260928-220921.md`](evidence/chat/chat-20260928-220921.md).
 - **Search (no model):** [`evidence/search/search-20260928-220556.md`](evidence/search/search-20260928-220556.md).
 - **Ingest logs:** [`evidence/ingest/`](evidence/ingest/). The source catalog is in [`data/source_catalog.json`](data/source_catalog.json).
-- TODO: screen recording of the offline run.
+- **Screen recording of the offline run** (Wi-Fi off; 60 MB .mov, so download it to watch): [`evidence/offline/offline-demo-recording.mov`](evidence/offline/offline-demo-recording.mov). It shows `./offline_demo.sh` and the interactive `./wiki chat` session.
 - **Obsidian screenshots:** below. The vault root is `vault/`, and each screenshot shows only the Obsidian window.
 
 ### Obsidian: my personal memory vault
