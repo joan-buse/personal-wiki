@@ -141,5 +141,10 @@
     "expected_source_retrieved": true,
     "expected_behavior": "answer",
     "behavior_matches": true
+  },
+  "human_assessment": {
+    "verdict": "pass",
+    "notes": "Correct and fully grounded. Retrieval: the expected passage (LinkedIn p.1 §Exploration) was ranked [S1], with all three sentences in one passage. Answer: each of the three sentences is quoted almost word for word from [S1]; no invented details; every citation points to the right passage.",
+    "reviewed": "2026-09-28"
   }
 }

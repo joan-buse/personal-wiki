@@ -140,5 +140,10 @@
     "expected_source_retrieved": true,
     "expected_behavior": "answer",
     "behavior_matches": true
+  },
+  "human_assessment": {
+    "verdict": "pass, with a retrieval weakness",
+    "notes": "The answer is correct and grounded: [S2] contains \"Remove undergrad GPA because the moment it's added it opens you up to comparison\". Retrieval weakness: BM25 did not match \"grade point average\" to \"GPA\". The GPA passage ranked only 2nd, matching on \"put\" and \"resume\". The top passage [S1] was irrelevant LinkedIn text that matched \"average\" (\"the average recruiter\"). The model ignored [S1] correctly, but this pass depended on incidental word overlap.",
+    "reviewed": "2026-09-28"
   }
 }

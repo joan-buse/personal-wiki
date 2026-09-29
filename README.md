@@ -21,7 +21,7 @@ A study wiki for my job search: my notes from the Haas career workshops (Aug 202
 All three are Google Docs PDF exports with extractable text on every page (checked with `pdftotext`; no OCR needed, no warnings). Headings such as "Positioning" or "Session #2 - Resume Format" are detected so citations carry page and section.
 
 Each original stays byte-for-byte unchanged. `data/source_catalog.json` maps each source ID
-(e.g. `src-workshop`) to its file, its SHA-256 hash, and the wiki notes generated from it. Every wiki
+(e.g. `src-aug-2025-linkedin-training`) to its file, its SHA-256 hash, and the wiki notes generated from it. Every wiki
 note links back to its source(s) in its **Sources** section and in its `sources:` frontmatter.
 
 ## Setup and device
@@ -63,13 +63,15 @@ ollama pull gemma4:e2b-it-qat
 ```bash
 ./wiki --help
 ./wiki ingest                         # all of vault/raw/ (unchanged sources are skipped)
-./wiki ingest vault/raw/notes.md --force
-./wiki search "workshop location"     # original passages + paths; no model needed
-./wiki ask "Where is the workshop?" --save
+./wiki ingest "vault/raw/Aug 2025 - Resume Only Workshop.pdf" --force   # regenerate one source
+./wiki search "cold outreach message"   # original passages + paths; no model needed
+./wiki ask "What should a networking outreach message include?" --save
+./wiki status                           # model, runtime version, memory, online/offline
 ./wiki chat                           # /notes QUERY, /sources, /reset, /exit
 ./wiki test                           # 4 ask-mode tests -> evidence/ask/
 ./wiki modecheck                      # chat/search/ask boundary checks -> evidence/mode_checks/
-python3 -m unittest discover tests    # harness tests with a fake model
+./offline_demo.sh                     # the full offline demonstration, logged to evidence/offline/
+python3 -m unittest discover tests    # 10 harness tests with a fake model (no Ollama needed)
 ```
 
 ## Architecture
@@ -80,7 +82,7 @@ python3 -m unittest discover tests    # harness tests with a fake model
 - **Harness** (`wikicli/`): mode selection, instructions per mode, conversation context, the decision to retrieve, prompt assembly, model calls, citation checks, error messages and saved evidence.
 - **CLI** (`wikicli/cli.py`): parses the command and dispatches it to the harness.
 
-**One path traced, `./wiki ask "Where is the workshop?"`:**
+**One path traced, `./wiki ask "What are the three sentences of a LinkedIn cold outreach message?"` (test T1):**
 1. `cli.main` parses `ask` and loads the config (`wiki.json`).
 2. `cmd_ask` loads the passage index and checks that the model is downloaded.
 3. `harness.ask` calls `Index.search`, which returns scored passages with their locations.
@@ -103,12 +105,20 @@ python3 -m unittest discover tests    # harness tests with a fake model
 
 Chat history is stored with citations expanded to file locations. It is never used as evidence in ask mode.
 
+**Errors are reported, never hidden** (`cli.main` turns them into one-line messages with exit code 2):
+- **Ollama not running:** says to start it with `ollama serve`. During ingest, the source passages are indexed first, so `search` still works.
+- **Model not downloaded:** names the exact `ollama pull` command.
+- **No index yet:** says to run `wiki ingest`.
+- **Unreadable or non-UTF-8 source, or a PDF with no text:** named per file in the ingest log; other sources continue.
+- **Model returns unusable JSON during ingest:** one retry, then that source is skipped and its existing notes are kept.
+- **`--mode online`:** refused, because only local mode exists.
+
 ## Design choices
 
 - **Passages:** at most 150 words each. They break at Markdown headings and paragraphs, and PDFs split per page (`pdftotext`, which runs locally). Each passage keeps its path, page, section and line range. At most 6,000 characters of evidence go to Gemma per turn, within `num_ctx` 4096 (largest prompt ≈ 2.5k tokens).
-- **Ingest:** each new or changed source (detected by SHA-256) goes to Gemma in pieces of at most 9,000 characters, along with `prompts/ingest-instructions.md` and the existing note titles. Gemma returns JSON topics. The harness then:
+- **Ingest:** each new or changed source (detected by SHA-256) goes to Gemma in pieces of at most 9,000 characters, along with `prompts/ingest-instructions.md` and every existing note's title and summary. Gemma returns JSON topics. The harness then:
   - cleans each title into 2–6 words with no dates, hashes or punctuation;
-  - files it in a topic folder (`Resume/`, `LinkedIn/`, `Networking/`, `Job Search/`);
+  - files it in one of the allowed topic folders from `wiki.json` (Resume, LinkedIn, Networking, Job Search). Gemma used only Resume, Networking and Job Search, so LinkedIn-specific notes are spread across those three; see Reflection;
   - keeps only `[[links]]` that point to notes that exist, each with a reason.
 - **Merging and linking:** Gemma sees every existing note's title and summary, so it can reuse a title for the same subject. The harness also merges near-identical titles (≥2 shared content words covering ⅔ of the shorter title). A second, linking pass asks Gemma for up to 3 genuinely related notes per note, each with a reason (`prompts/link-instructions.md`). Links to notes that don't exist are dropped.
 - **Model settings:** Gemma 4's thinking mode is off (`think: false`) for speed on the M1. The temperature is 0.1 for ask and linking, 0.2 for ingest and 0.7 for chat. Ask repeats the refusal rule right after the question (see Reflection).
@@ -121,8 +131,8 @@ Chat history is stored with citations expanded to file locations. It is never us
 Required run: offline, Wi-Fi off, CLI restarted. Every saved record shows `"internet_reachable": false`.
 
 - **Full offline terminal log:** [`evidence/offline/offline-run-20260928-220454.txt`](evidence/offline/offline-run-20260928-220454.txt). It covers `status`, `--help`, ingesting a source, re-ingesting with no duplicates, search, the 4 ask tests and the mode checks. An earlier offline attempt, [`offline-run-20260928-215622.txt`](evidence/offline/offline-run-20260928-215622.txt), exposed the note-rename bug described below.
-- **Ask-mode evidence cards (offline):** [T1](evidence/ask/T1-20260928-220604.md), [T2](evidence/ask/T2-20260928-220609.md), [T3](evidence/ask/T3-20260928-220618.md), [T4](evidence/ask/T4-20260928-220622.md), and the [summary](evidence/ask/summary-20260928-220622.md).
-- **Mode checks (offline):** [`evidence/mode_checks/modecheck-20260928-220706.md`](evidence/mode_checks/modecheck-20260928-220706.md).
+- **Ask-mode evidence cards (offline), each with my reviewed assessment:** [T1](evidence/ask/T1-20260928-220604.md), [T2](evidence/ask/T2-20260928-220609.md), [T3](evidence/ask/T3-20260928-220618.md), [T4](evidence/ask/T4-20260928-220622.md), and the [summary](evidence/ask/summary-20260928-220622.md).
+- **Mode checks (offline, with assessment):** [`evidence/mode_checks/modecheck-20260928-220706.md`](evidence/mode_checks/modecheck-20260928-220706.md).
 - **Interactive chat (offline, 4 turns including a follow-up):** [`evidence/chat/chat-20260928-220921.md`](evidence/chat/chat-20260928-220921.md).
 - **Search (no model):** [`evidence/search/search-20260928-220556.md`](evidence/search/search-20260928-220556.md).
 - **Ingest logs:** [`evidence/ingest/`](evidence/ingest/). The source catalog is in [`data/source_catalog.json`](data/source_catalog.json).
@@ -154,8 +164,8 @@ The same note scrolled down: **Related notes** are `[[links]]` with reasons, and
 | Test | Question | Expected source retrieved | Behavior | Citations check out? |
 |---|---|---|---|---|
 | T1 | Three sentences of a LinkedIn cold outreach message | ✅ LinkedIn p.1 §Exploration as [S1] | Answered | ✅ All three sentences quoted from [S1] |
-| T2 | College grade point average on resume? (reworded) | ✅ found despite "GPA" vs "grade point average" | Answered | ✅ "Remove undergrad GPA … comparison" |
-| T3 | What a networking outreach message should include | ✅ both sources retrieved | Answered, combining 2 sources | ✅ LinkedIn cold-outreach guidelines, p.1 §Exploration [S2] + "short, under 100 words, 15–20 minutes" from Resume & Networking p.5 [S3] |
+| T2 | College grade point average on resume? (reworded) | ⚠️ ranked 2nd, matched on "put"/"resume". The top hit was irrelevant ("average recruiter"). | Answered | ✅ "Remove undergrad GPA … comparison" [S2] |
+| T3 | What a networking outreach message should include | ✅ both sources retrieved | Answered, combining 2 sources. ⚠️ It did not flag that they conflict (mention "a job" and ask for 10 min vs. "no mention of jobs" and 15–20 min). | ✅ LinkedIn cold-outreach guidelines, p.1 §Exploration [S2] + "short, under 100 words, 15–20 minutes" from Resume & Networking p.5 [S3] |
 | T4 | Who presented the LinkedIn training? | – (none exists) | `Insufficient evidence: …` | ✅ No citation, as required |
 
 ### Chat and mode boundaries (offline)
@@ -167,11 +177,6 @@ The same note scrolled down: **Related notes** are `[[links]]` with reasons, and
 | "make it shorter" | no retrieval (follow-up) | Reworked the previous draft |
 | "What do my notes say about when to ask for a referral?" | retrieval ON (asks about notes) | "Never ask for a referral in the first call" [S1]; checked against the source passage |
 | Chat-only claim "study group meets in the Blue Lounge", then ask | ask ignores chat | `Insufficient evidence: …` |
-- Obsidian screenshots: an open note, `index.md`, and the graph view (filter `path:wiki/`, attachments off).
-- The ingest log in `evidence/ingest/`, including a re-ingest that shows no duplicates.
-- The four ask cards and a summary in `evidence/ask/`.
-- The mode checks in `evidence/mode_checks/`.
-- An offline recording or screenshots, with Wi-Fi off and the CLI restarted.
 
 ## Changes made after observed failures (2026-09-28)
 
@@ -183,14 +188,14 @@ Earlier results are kept in `evidence/first-ingest-backup/` and `evidence/online
 | Only 5/18 notes had related links | Links were proposed only while reading one source | Linking pass across all notes | see above |
 | T4 answered "sources do not state…" with a bogus `[S1]` citation, not "Insufficient evidence:" | A 2B model drifts from system-prompt formatting | Repeat the refusal rule after the question | T4 returns `Insufficient evidence: …`, no citation; T2 still answered |
 | Chat LinkedIn plan was generic and uncited | Drafting requests are mostly filler words, so term coverage < 50% | Drafting requests retrieve if the top passage matches ≥2 topic words | Plan built from notes with citations |
-| Chat said "I have noted that" after a chat-only claim | Persona didn't state it cannot save | Persona: say it will keep it in mind for this conversation only | Fixed |
+| Chat said "I have noted that" after a chat-only claim | Persona didn't state it cannot save | Persona: say it will keep it in mind for this conversation only | **Only partly fixed.** Correct in the online check and the first offline run, but the final offline run said "I have noted that" again. The prompt rule is not reliable with a 2B model (see Reflection). |
 | First offline run: a forced re-ingest renamed "Resume Content Optimization" to "Resume Content Keywords" (no duplicate, but the title wasn't stable) | The similar-title check ignored the source's own previous notes during re-ingest | Also match against the source's previous titles | Second offline run: re-ingest removed 0 notes (was 1) |
 | Two ingests in the same second overwrote one log file | Timestamp to the second | Add microseconds to log names | Fixed |
 | T1's third sentence was a separate 22-word passage | Chunk boundary | Merge short tails into the previous passage from the same section | T1 passage complete |
 
 ## Reflection
 
-**Limitation: chat follow-ups can drift away from the evidence.** When I asked chat to shorten a LinkedIn plan built from my notes, the short version said to "request specific endorsements". My notes say endorsements don't appear in LinkedIn Recruiter and that *recommendations* matter ([mode check](evidence/online-dry-run/mode_checks/)).
+**Limitation: chat follow-ups can drift away from the evidence.** When I asked chat to shorten a LinkedIn plan built from my notes, the short version said to "request specific endorsements". My notes say endorsements don't appear in LinkedIn Recruiter and that *recommendations* matter ([transcript](evidence/mode_checks/modecheck-20260928-184012.md), an online run).
 
 - **Cause:** follow-ups deliberately skip retrieval, so the model rewrites its own earlier text without the source passages in front of it. Details can then be simplified until they are wrong.
 - **A related smaller issue** in the offline chat: the outreach draft closely reuses the LinkedIn "message to forward" template from [S5], but it cites only [S1]/[S4]. Its claim that the draft "aligns with" [S1] is loose, since [S1] says to ask for 15–20 minutes, not 10.
@@ -198,6 +203,9 @@ Earlier results are kept in `evidence/first-ingest-backup/` and `evidence/online
 **Improvement to try next:** when a follow-up rewrites an answer that used notes, re-attach that answer's passages and check citations again. Also add a short check that flags any fact in the rewrite that isn't in those passages.
 
 **Other limitations:**
-- Keyword (BM25) retrieval depends on shared words. T2 worked only because "resume" and "college" still matched. A local embedding model would handle rewording better.
+- **Keyword (BM25) retrieval depends on shared words.** In T2, "grade point average" never matched "GPA". The right passage ranked 2nd only because of "put" and "resume", and the top hit was an irrelevant LinkedIn line about "the average recruiter". A local embedding model would handle rewording better.
+- **Conflicting sources aren't reconciled.** In T3, the LinkedIn notes say to state that you want "a referral, a job" and to ask for 10 minutes. The Resume & Networking notes say never to mention jobs and to ask for 15–20 minutes. Gemma cited both correctly but presented them side by side as one piece of advice. The research rules could require flagging disagreement between sources.
+- **Prompt rules are not fully reliable at 2B.** Chat again said "I have noted that…" in the final offline run, despite the persona rule. A code-level check on the reply would be more reliable than an instruction.
+- **Folder choice:** Gemma never used the LinkedIn folder. For example, "LinkedIn Positioning Strategy" landed in Resume/. A fixed rule (title contains "LinkedIn" → LinkedIn/) or a manual move would fix it.
 - The Resume Only PDF repeats Sessions 1–3 of the other PDF, so near-duplicate passages can take up several of the 5 retrieval slots.
 

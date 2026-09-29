@@ -131,5 +131,10 @@
     "expected_source_retrieved": null,
     "expected_behavior": "insufficient",
     "behavior_matches": true
+  },
+  "human_assessment": {
+    "verdict": "pass",
+    "notes": "Correct refusal. No source names a presenter; the answer begins \"Insufficient evidence:\" and has no citation, as the research rules require. In the online dry run (evidence/online-dry-run/ask/) this test failed: the refusal was worded freely and carried a bogus [S1] citation. It was fixed by repeating the refusal rule after the question.",
+    "reviewed": "2026-09-28"
   }
 }
