@@ -127,7 +127,27 @@ Required run: offline, Wi-Fi off, CLI restarted. Every saved record shows `"inte
 - **Search (no model):** [`evidence/search/search-20260928-220556.md`](evidence/search/search-20260928-220556.md).
 - **Ingest logs:** [`evidence/ingest/`](evidence/ingest/). The source catalog is in [`data/source_catalog.json`](data/source_catalog.json).
 - TODO: screen recording of the offline run.
-- TODO: the 3 Obsidian screenshots (open note, `index.md`, graph view filtered to `path:wiki/` with attachments off).
+- **Obsidian screenshots:** below. The vault root is `vault/`, and each screenshot shows only the Obsidian window.
+
+### Obsidian: my personal memory vault
+
+**1. An open note: `wiki/Resume/Writing Effective Resume Bullets.md`**
+
+The filename matches the heading. The properties hold the machine source IDs and both source files, and every detail bullet cites its PDF.
+
+![Open note, top: title, properties with sources](evidence/screenshots/obsidian-note-top.webp)
+
+The same note scrolled down: **Related notes** are `[[links]]` with reasons, and **Sources** link back to both original PDFs in `raw/`. To trace a note back to its evidence: open this note, follow [[Resume Content Keywords]], then open *Aug 2025 - Resume Only Workshop* in `raw/`.
+
+![Open note, bottom: related notes and sources](evidence/screenshots/obsidian-note-bottom.webp)
+
+**2. The topic-organized index (`index.md`) and page list**
+
+![index.md grouped by Job Search, Networking, Resume](evidence/screenshots/obsidian-index.webp)
+
+**3. Graph view.** Filter `path: wiki`, Attachments off, so only the 17 curated notes show, each with a readable label.
+
+![Graph view of the 17 wiki notes](evidence/screenshots/obsidian-graph.webp)
 
 ### Ask-mode results (offline)
 
